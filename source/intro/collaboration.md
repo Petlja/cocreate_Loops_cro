@@ -1,19 +1,19 @@
-# Good collaboration rules
+# Pravila dobre suradnje
 
-1. We are all equal and we respect one another.
-2. We foster a good atmosphere even when we think differently.
-3. We are all responsible for group work. In successful groups, all members have a sense of joint or shared responsibility for the results of group work.
-4. We help everyone contribute to group work.
-5. We strive to involve everyone in decision-making.
-6. The more ideas we consider, the more certain we are that we have selected the best one.
-7. We expound every idea, weigh arguments, and devise solutions.
-8. We wisely use our time to work on the task.
-9. We monitor our progress and contemplate our next step.
+1. Svi smo jednaki i međusobno se poštujemo.
+2. Njegujemo dobru atmosferu čak i kada razmišljamo drugačije.
+3. Svi smo odgovorni za grupni rad. U uspješnim grupama svi članovi osjećaju zajedničku ili podijeljenu odgovornost za rezultate grupnog rada.
+4. Pomažemo svima da doprinesu grupnom radu.
+5. Nastojimo uključiti sve u donošenje odluka.
+6. Što više ideja razmatramo, to smo sigurniji da smo odabrali najbolju.
+7. Svaku ideju detaljno razrađujemo, vagamo argumente i osmišljavamo rješenja.
+8. Mudro koristimo svoje vrijeme za rad na zadatku.
+9. Pratimo napredak i promišljamo o sljedećem koraku.
 
-The successful collaboration rules have to be complied with to complete the task:
+Za uspješno izvršavanje zadatka potrebno je pridržavati se pravila suradnje:
 
-* Share responsibilities equally
-* Listen actively and respect each other's ideas
-* Make decisions together
-* Stay focused on the task
-* Support each other and solve problems as a pair
+* Ravnomjerno dijelite odgovornosti
+* Aktivno slušajte i poštujte tuđe ideje
+* Donosite odluke zajedno
+* Ostanite usredotočeni na zadatak
+* Podržavajte jedni druge i rješavajte probleme u paru

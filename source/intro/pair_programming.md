@@ -1,65 +1,63 @@
-# Pair Programming in the Classroom
+# Programiranje u paru u učionici
 
-In IT companies today, Agile methodology is one of the most popular and widely
-used software development methodologies — especially where the teams need to
-deliver working software quickly, collaboratively, and adaptively. **Pair
-programming** is a core practice in Extreme Programming (XP), which is one
-of the Agile methodologies.
+U IT tvrtkama danas, Agile metodologija je jedna od najpopularnijih i najčešće
+korištenih metodologija razvoja softvera — posebno tamo gdje timovi trebaju
+brzo, suradnički i prilagodljivo isporučiti funkcionalan softver. **Programiranje
+u paru** je osnovna praksa u Extreme Programming (XP), koja je jedna
+od Agile metodologija.
 
-It is a collaborative software development technique where two developers work
-together at one computer. One developer, called the **driver**, writes the code
-and focuses on syntax, while the other developer, called the **navigator**,
-reviews each line of code as it is typed, looks out for mistakes, asks
-questions, and suggests improvements. The two developers switch roles
-frequently.
+To je suradnička tehnika razvoja softvera gdje dva programera rade zajedno za
+jednim računalom. Jedan programer, nazvan **vozač**, piše kod i fokusira se na
+sintaksu, dok drugi programer, nazvan **navigator**, pregledava svaki redak koda
+dok se tipka, pazi na pogreške, postavlja pitanja i predlaže poboljšanja. Dva
+programera često mijenjaju uloge.
 
-It is very easy to transfer this practice from IT companies to high school
-computer classrooms. In the classroom, two students share one computer to solve
-a programming task together. One student types the code, while the other checks
-the code, gives suggestions, and thinks about the next steps. After each
-subtask, they switch roles. Pair programming helps students learn by working
-together, practicing teamwork, sharing ideas, and seeing different ways to
-solve the same problems.
+Vrlo je lako prenijeti ovu praksu iz IT tvrtki u srednjoškolske učionice
+informatike. U učionici, dva učenika dijele jedno računalo kako bi zajedno riješili
+programski zadatak. Jedan učenik tipka kod, dok drugi provjerava kod, daje
+prijedloge i razmišlja o sljedećim koracima. Nakon svakog podzadatka mijenjaju
+uloge. Programiranje u paru pomaže učenicima učiti radeći zajedno, vježbati
+timski rad, dijeliti ideje i vidjeti različite načine rješavanja istih problema.
 
-## Learning Objectives
+## Ciljevi učenja
 
-- To understand the structure and purpose of loops, and their use in manipulation and transformation of the text.
-- To understand the principles behind simple cryptographic algorithms and to implement these algorithms in a chosen programming language using loops.
-- To understand how computers protect privacy and prevent misuse of information and how text can be hidden, scrambled, and protected from unauthorized access.
+- Razumjeti strukturu i svrhu petlji te njihovu upotrebu u manipulaciji i transformaciji teksta.
+- Razumjeti principe jednostavnih kriptografskih algoritama i implementirati te algoritme u odabranom programskom jeziku koristeći petlje.
+- Razumjeti kako računala štite privatnost i sprječavaju zloupotrebu informacija te kako se tekst može sakriti, šifrirati i zaštititi od neovlaštenog pristupa.
 
-## Learning Outcomes
+## Ishodi učenja
 
-After completing the lesson, students will be able to:
+Nakon završetka lekcije, učenici će moći:
 
-- Correctly write loop-based code that implements a Caesar cipher with encryption and decryption functionality.
-- Write and explain a loop-based implementation of an XOR cipher.
-- Construct a Skytale cipher using loops.
-- Identify which type of loop is appropriate for different tasks involving text processing.
-- Effectively work in pairs applying pair programming, effectively communicate, and present results in a clear and confident manner.
+- Ispravno napisati kod temeljen na petljama koji implementira Cezarovu šifru s funkcionalnošću šifriranja i dešifriranja.
+- Napisati i objasniti implementaciju XOR šifre temeljen na petljama.
+- Konstruirati Skital šifru koristeći petlje.
+- Identificirati koji je tip petlje prikladan za različite zadatke koji uključuju obradu teksta.
+- Učinkovito raditi u paru primjenjujući programiranje u paru, učinkovito komunicirati i jasno i samouvjereno prezentirati rezultate.
 
+## Prednosti za učenike
 
-## Benefits for Students
+- **Učenje od vršnjaka:** Učenici uče jedni od drugih. Početnici imaju koristi od
+rada s iskusnijim kolegama, a svi jačaju svoje razumijevanje objašnjavajući
+svoj misaoni proces. Također, kroz zajedničko znanje rješavanje problema bit će
+brže.
+- **Bolja kvaliteta rješenja:** Drugi par očiju pomaže rano uočiti pogreške.
+Neposredna povratna informacija često vodi do boljih rješenja i čišćeg koda.
+- **Poboljšana angažiranost:** Rad u paru drži oba učenika aktivnima i fokusiranima.
+Komuniciranje ideja pomaže produbiti razumijevanje i razvija vještine timskog rada.
 
-- **Peer Learning:** Students learn from each other. Beginners benefit from
-working with more experienced classmates, and everyone strengthens their
-understanding by explaining their thought process. Also, through shared
-knowledge the problem-solving will be faster.
-- **Better Solution Quality:** A second pair of eyes helps catch errors early.
-Immediate feedback often leads to better solutions and cleaner code.
-- **Improved Engagement:** Pair work keeps both students active and focused.
-Communicating ideas helps deepen understanding and builds teamwork skills.
+## Izazovi u učionici
 
-## Challenges in the Classroom
+- **Sukobi osobnosti:** Razlike u stilu komunikacije ili razini vještina mogu
+dovesti do frustracije. Učenici moraju naučiti raditi s poštovanjem, čak i kada
+se ne slažu.
+- **Neujednačeno sudjelovanje:** Jedan učenik može pokušati preuzeti kontrolu.
+Nastavnici moraju nadzirati redovitu izmjenu uloga kako bi osigurali da su oba
+učenika jednako uključena.
+- **Umor:** Duge sesije mogu biti mentalno zahtjevne. Dobro definirani zadaci
+pomažu održati fokus i energiju.
 
-- **Personality Clashes:** Differences in communication style or skill level
-can lead to frustration. Students must learn to work respectfully, even when
-they disagree.
-- **Uneven Participation:** One student may try to take over. Teachers must
-supervise regular role switching to ensure both students are equally involved.
-- **Fatigue:** Long sessions can be mentally demanding. Well-scoped tasks help
-maintain focus and energy.
-
-Best pair programming practices recommend switching roles after each subtask,
-to keep both students engaged. Students should communicate out loud, openly and
-respectfully, explaining what they’re doing or thinking. If both students are
-stuck they should ask for teacher’s help — that is also the part of learning!
+Najbolje prakse programiranja u paru preporučuju izmjenu uloga nakon svakog
+podzadatka kako bi oba učenika bila angažirana. Učenici bi trebali komunicirati
+glasno, otvoreno i s poštovanjem, objašnjavajući što rade ili misle. Ako su oba
+učenika zapela, trebali bi zatražiti pomoć nastavnika — to je također dio učenja!

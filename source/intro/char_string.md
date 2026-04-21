@@ -1,19 +1,19 @@
-# Characters and strings
+# Znakovi i nizovi znakova
 
-Understanding how characters and strings are represented will help you to
-handle text correctly in the following lesson, ensuring proper data processing.
+Razumijevanje načina na koji su znakovi i nizovi znakova reprezentirani pomoći će vam da
+ispravno rukujete tekstom u sljedećoj lekciji, osiguravajući pravilnu obradu podataka.
 
-The character data type, commonly referred to as char, is used to represent
-individual characters. Since computers can only store binary values, characters
-must be encoded as numbers. In modern computer systems, either ASCII or Unicode
-encoding schemes are used. Older programming languages (e.g., C) typically rely
-on ASCII, while modern languages (e.g., C#) support Unicode.
+Vrsta podataka za znakove, koja se često naziva char, koristi se za reprezentaciju
+pojedinih znakova. Budući da računala mogu pohranjivati samo binarne vrijednosti, znakovi
+moraju biti kodirani kao brojevi. U modernim računalnim sustavima koriste se sheme kodiranja
+ASCII ili Unicode. Stariji programski jezici (npr. C) tipično se oslanjaju na ASCII,
+dok moderni jezici (npr. C#) podržavaju Unicode.
 
 ## ASCII
 
-ASCII *(American Standard Code for Information Interchange)* is a 7-bit binary
-code, represented in memory with 8 bits (one byte). It defines 128 characters,
-including letters, digits, punctuation marks, and control characters:
+ASCII *(American Standard Code for Information Interchange)* je 7-bitni binarni
+kod, predstavljen u memoriji s 8 bitova (jedan bajt). Definira 128 znakova,
+uključujući slova, znamenke, interpunkcijske znakove i upravljačke znakove:
 
 ```text
 DEC OCT HEX CH    DEC OCT HEX CH    DEC OCT HEX CH    DEC OCT HEX CH
@@ -54,11 +54,11 @@ DEC OCT HEX CH    DEC OCT HEX CH    DEC OCT HEX CH    DEC OCT HEX CH
 
 ## Unicode
 
-Unicode is an extended character set that includes all ASCII codes as its first
-part. In Unicode, the first 128 code values (U+0000 to U+007F) are completely
-identical to ASCII codes. Beyond that, Unicode defines more than 150,000
-characters from writing systems around the world. For example, the specific
-Latin characters of the Serbian alphabet are defined like this...
+Unicode je prošireni skup znakova koji uključuje sve ASCII kodove kao svoj prvi
+dio. U Unicodeu, prvih 128 vrijednosti koda (U+0000 do U+007F) potpuno su
+identični ASCII kodovima. Osim toga, Unicode definira više od 150 000
+znakova iz pisama cijelog svijeta. Na primjer, posebni
+latinični znakovi srpske abecede definirani su ovako...
 
 | Code   | Symbol | DEC     |
 |--------|--------|---------|
@@ -73,7 +73,7 @@ Latin characters of the Serbian alphabet are defined like this...
 | U+017D | Ž      | 381     |
 | U+017E | ž      | 382     |
 
-...Latin letters written with two characters are defined like this...
+...latinična slova pisana s dva znaka definirana su ovako...
 
 | Code   | Symbol | DEC     |
 |--------|--------|---------|
@@ -87,7 +87,7 @@ Latin characters of the Serbian alphabet are defined like this...
 | U+01CB | ǋ      | 459     |
 | U+01CC | ǌ      | 460     |
 
-...and the Cyrillic characters of the Serbian alphabet are defined like this:
+...a ćirilični znakovi srpske abecede definirani su ovako:
 
 | Code   | Symbol | DEC     |
 |--------|--------|---------|
@@ -152,17 +152,17 @@ Latin characters of the Serbian alphabet are defined like this...
 | U+045F | џ      | 1119    |
 | U+0448 | ш      | 1096    |
 
-Although some Latin and Cyrillic letters appear to be the same, their Unicode
-code values are different. For example, the Latin capital letter A is encoded
-as U+0041, while the Cyrillic capital letter A is encoded as U+0410.
+Iako neka latinična i ćirilična slova izgledaju isto, njihove Unicode
+vrijednosti koda su različite. Na primjer, latinično veliko slovo A kodirano je
+kao U+0041, dok je ćirilično veliko slovo A kodirano kao U+0410.
 
-## Strings
+## Nizovi znakova
 
-A string is a sequence of characters arranged in a specific order. Each
-character can be a letter, digit, punctuation mark, whitespace, or symbol.
-Strings are fundamental in computing because they represent text, file names,
-user input, and much more.
+Niz znakova je slijed znakova raspoređenih određenim redoslijedom. Svaki
+znak može biti slovo, znamenka, interpunkcijski znak, razmak ili simbol.
+Nizovi znakova temeljni su u računarstvu jer predstavljaju tekst, nazive datoteka,
+korisnički unos i još mnogo toga.
 
-A string is typically represented as a contiguous block of memory. Some systems
-terminate strings with a special marker like a null character `'\0'` to
-indicate the end, while others may store the length explicitly.
+Niz znakova tipično je predstavljen kao neprekinuti blok memorije. Neki sustavi
+završavaju nizove posebnim oznakom poput null znaka `'\0'` za
+označavanje kraja, dok drugi mogu eksplicitno pohraniti duljinu.
