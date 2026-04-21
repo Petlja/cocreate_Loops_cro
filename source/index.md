@@ -1,43 +1,42 @@
 ﻿---
 status: exclude
-alias: Loops_and_Cryptography
+alias: Loops_and_Cryptography_cro
 lang: en
-short_description: Introduction to Cryptography with Loops
+short_description: Uvod u kriptografiju s petljama
 long_description: >
-    <p>In this course, you will learn to apply loops on characters and strings to implement basic cryptographic algorithms.</p>
+    <p>U ovom tečaju naučit ćete primjenjivati petlje na znakovima i nizovima znakova za implementaciju osnovnih kriptografskih algoritama.</p>
     <p>
     <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.sr_LATN">
     <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a>
-    <br>This course was published by Petlja Foundation under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.sr_LATN">Creative Commons Attribution 4.0 International License (CC BY 4.0)</a>.
+    <br>Ovaj tečaj objavio je Petlja Foundation pod <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.sr_LATN">Creative Commons Autorstvo 4.0 Međunarodna licenca (CC BY 4.0)</a>.
     </p>
 
 will_learn:
-    - Conditions and Loops Fundamentals
-    - Characters and Strings Fundamentals
-    - Introduction to Cryptography
-    - Caesar Cipher
-    - Skytale
+    - Osnove uvjeta i petlji
+    - Osnove znakova i nizova znakova
+    - Uvod u kriptografiju
+    - Cezarova šifra
+    - Skital
     - XOR
 
 needed: 
-    - A basic personal computer system with Internet access. Optionally, a computer system with specific programming language IDE.
+    - Osnovno osobno računalo s pristupom internetu. Opcionalno, računalo s IDE-om za određeni programski jezik.
 
 useful:
-    - Microsoft C++, C, and Assembler documentation: https://learn.microsoft.com/en-us/cpp/
-    - The GNU C Reference Manual: https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html
-    - Sharp language documentation: https://learn.microsoft.com/en-us/dotnet/csharp/
-    - Python language documentation: https://docs.python.org/3/
+    - Dokumentacija Microsoft C++, C i Assembler: https://learn.microsoft.com/en-us/cpp/
+    - GNU C referentni priručnik: https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html
+    - Dokumentacija Sharp jezika: https://learn.microsoft.com/en-us/dotnet/csharp/
+    - Dokumentacija Python jezika: https://docs.python.org/3/
 ---
 
-# Loops and Cryptography
+# Petlje i kriptografija
 
-You are about to start an introductory lesson about loops on characters and strings
-to implement basic cryptographic algorithms.
+Pred vama je uvodno predavanje o petljama na znakovima i nizovima znakova za implementaciju osnovnih kriptografskih algoritama.
 
-Course author: Petlja Foundation
+Autor tečaja: Petlja Foundation
 
-This course is published by Petlja Foundation under the
-[Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.sr_LATN).
+Ovaj tečaj objavio je Petlja Foundation pod
+[Creative Commons Autorstvo 4.0 Međunarodna licenca (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.sr_LATN).
 
 ```{toctree}
 :maxdepth: 2
