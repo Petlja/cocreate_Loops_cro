@@ -1,6 +1,6 @@
-# Example Lecture 2
+# Ogledna lekcija 2
 
-This is another example lecture in English.
+Ovo je još jedna ogledna lekcija na hrvatskom.
 
-Use this space to add more sample content, explanations, or exercises for your course.
+Koristite ovaj prostor za dodavanje više oglednog sadržaja, objašnjenja ili vježbi za vaš tečaj.
 

@@ -1,17 +1,17 @@
-# Example Lecture
+# Ogledna lekcija
 
-Welcome to this example lecture!
+Dobrodošli na ovu oglednu lekciju!
 
-This is a sample lesson to demonstrate how course content can be structured. You can use this template to add your own text, code examples, images, or exercises.
+Ovo je ogledna lekcija za demonstraciju kako sadržaj tečaja može biti strukturiran. Ovaj predložak možete koristiti za dodavanje vlastitog teksta, primjera koda, slika ili vježbi.
 
-## Section Title
+## Naslov odjeljka
 
-Add your content here. For example, you can explain a concept, provide instructions, or include a code block:
+Ovdje dodajte svoj sadržaj. Na primjer, možete objasniti pojam, pružiti upute ili uključiti blok koda:
 
 ```python
 print("Hello, world!")
 ```
 
-## Exercise
+## Vježba
 
-Try editing this lecture or adding new sections to practice creating course materials.
+Pokušajte urediti ovu lekciju ili dodati nove odjeljke kako biste vježbali izradu materijala za tečaj.
