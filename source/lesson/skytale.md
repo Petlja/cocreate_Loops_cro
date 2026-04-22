@@ -1,29 +1,28 @@
-# Skytale
+# Skital
 
-After completing this lesson, you will be able to:
+Nakon završetka ove lekcije, moći ćete:
 
-* Explain how the Skytale cipher works.
-* Implement encryption and decryption using simple array or string operations.
-* Understand how physical encryption devices can be modeled digitally.
+* Objasniti kako funkcionira Skital šifra.
+* Implementirati šifriranje i dešifriranje koristeći jednostavne operacije s poljima ili nizovima znakova.
+* Razumjeti kako se fizički uređaji za šifriranje mogu digitalno modelirati.
 
-The Skytale is one of the oldest known tools for encryption, dating back to
-ancient Greece around 400 BC. It was a simple cylindrical device used by the
-Spartans to send secret messages during military campaigns.
+Skital je jedan od najstarijih poznatih alata za šifriranje, koji datira iz
+antičke Grčke oko 400. p.n.e. Bio je to jednostavan cilindrični uređaj koji su
+Spartanci koristili za slanje tajnih poruka tijekom vojnih pohoda.
 
-A strip of parchment or leather was wound around a wooden rod (the *skytale*)
-of a specific diameter. The message was then written lengthwise along the rod.
-Once unwound, the letters appeared scrambled and meaningless. The recipient
-needed a rod of the **exact same diameter** to wrap the strip and read the
-original message.
+Traka pergamenta ili kože omotavala se oko drvenog štapa (*skitala*)
+određenog promjera. Poruka se zatim pisala duž štapa. Nakon odmotavanja,
+slova su izgledala razbacano i besmisleno. Primatelj je trebao štap
+**točno istog promjera** kako bi omotao traku i pročitao originalnu poruku.
 
-If you want to encrypt the message:
+Ako želite šifrirati poruku:
 
 ```text
 attackatdawn
 ```
 
-and you choose a rod that allows **4 letters per turn**, you first write the
-message vertically in columns, forming rows of length 4:
+i odaberete štap koji omogućuje **4 slova po okretaju**, najprije pišete
+poruku vertikalno u stupcima, formirajući retke duljine 4:
 
 ```text
 a t t a
@@ -31,38 +30,36 @@ c k a t
 d a w n
 ```
 
-The ciphertext is then created by reading row by row:
+Šifrirani tekst se zatim formira čitanjem redak po redak:
 
 ```text
 acdtkatawatn
 ```
 
-To decrypt, the receiver rewinds the strip around a rod of the same diameter
-and reads vertically again to reconstruct the original message.
+Za dešifriranje, primatelj ponovo omota traku oko štapa istog promjera
+i čita vertikalno kako bi rekonstruirao originalnu poruku.
 
-## Simple assignment
+## Jednostavan zadatak
 
-Create a console application in any programming language to encrypt and decrypt
-messages using the Skytale cipher.
+Napravite konzolnu aplikaciju u bilo kojem programskom jeziku za šifriranje i
+dešifriranje poruka koristeći Skital šifru.
 
-The allowed alphabet for messages includes only the lowercase letters of the
-English alphabet:
+Dopuštena abeceda za poruke uključuje samo mala slova engleske abecede:
 
 ```text
 Σ = { a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z }
 ```
 
-Spaces, uppercase letters, numbers, and other characters are not allowed.
+Razmaci, velika slova, brojevi i drugi znakovi nisu dopušteni.
 
-In the first line of the user input there will be a message `m` no longer than
-one hundred characters. In the second line there will be an integer `k` (the
-number of columns – circumference of the rod). In the third line there will be
-an integer `s`, which represents the operation. If $s=1$, then `m` should be
-encrypted. If $s=2$, then `m` should be decrypted.
+U prvom retku korisničkog unosa bit će poruka `m` duljine do sto znakova. U
+drugom retku bit će cijeli broj `k` (broj stupaca – opseg štapa). U trećem
+retku bit će cijeli broj `s`, koji predstavlja operaciju. Ako je $s=1$, tada `m`
+treba biti šifrirano. Ako je $s=2$, tada `m` treba biti dešifrirano.
 
-### Test example 1
+### Test primjer 1
 
-If the input is:
+Ako je unos:
 
 ```text
 attackatdawn
@@ -70,15 +67,15 @@ attackatdawn
 1
 ```
 
-the output should be:
+izlaz bi trebao biti:
 
 ```text
 acdtkatawatn
 ```
 
-### Test example 2
+### Test primjer 2
 
-If the input is:
+Ako je unos:
 
 ```text
 acdtkatawatn
@@ -86,44 +83,44 @@ acdtkatawatn
 2
 ```
 
-the output should be:
+izlaz bi trebao biti:
 
 ```text
 attackatdawn
 ```
 
-## Start the assignment
+## Započnite zadatak
 
-[Implement the cypher here ](https://arena.petlja.org/sr-Latn-RS/competition/123-co-create#tab_142946)
+[Implementirajte šifru ovdje ](https://arena.petlja.org/sr-Latn-RS/competition/123-co-create#tab_142946)
 
-## Solution hints
+## Savjeti za rješenje
 
-For **encryption**, write the plaintext vertically into a table with `k`
-columns. Read the table row by row to form the ciphertext. For **decryption**,
-write the ciphertext row by row into a table with `k` columns, read the table
-vertically to reconstruct plaintext.
+Za **šifriranje**, zapišite otvoreni tekst vertikalno u tablicu s `k` stupcima.
+Čitajte tablicu redak po redak kako biste formirali šifrirani tekst. Za
+**dešifriranje**, zapišite šifrirani tekst redak po redak u tablicu s `k`
+stupcima, čitajte tablicu vertikalno kako biste rekonstruirali otvoreni tekst.
 
-## Advanced Skytale Assignments (optional)
+## Napredni zadaci s Skital šifrom (opcionalno)
 
-### Expand the allowed alphabet
+### Proširite dopuštenu abecedu
 
-Include uppercase letters, spaces, numbers, and punctuation.
+Uključite velika slova, razmake, brojeve i interpunkciju.
 
-### Use functions
+### Koristite funkcije
 
-Create `encrypt()` and `decrypt()` functions to keep the code modular.
+Napravite funkcije `encrypt()` i `decrypt()` kako bi kod bio modularan.
 
-### Create a Class
+### Napravite klasu
 
-Implement a `SkytaleCipher` class that stores `k` and provides methods for
-encryption and decryption.
+Implementirajte klasu `SkytaleCipher` koja pohranjuje `k` i pruža metode za
+šifriranje i dešifriranje.
 
-### Encrypt and Decrypt Files
+### Šifrirajte i dešifrirajte datoteke
 
-Modify the program to read plaintext or ciphertext from a file and write
-results to another file.
+Izmijenite program tako da čita otvoreni tekst ili šifrirani tekst iz datoteke
+i zapisuje rezultate u drugu datoteku.
 
-### Handle incomplete rows
+### Rukujte nepotpunim recima
 
-Modify your program so that if the last row is shorter than `k`, it still
-encrypts and decrypts correctly by handling missing characters or padding.
+Izmijenite program tako da, ako je posljednji redak kraći od `k`, ispravno
+šifrira i dešifrira rukujući nedostajućim znakovima ili dopunjavanjem.

@@ -1,8 +1,8 @@
 # XOR
 
-XOR *(Exclusive OR)* is a logical operation that outputs true (1) only when
-inputs differ. It's a fundamental binary operation with important applications
-in computer science and cryptography.
+XOR *(Ekskluzivni ILI)* je logička operacija koja daje istinito (1) samo kada
+se ulazi razlikuju. To je temeljna binarna operacija s važnim primjenama
+u računarstvu i kriptografiji.
 
 | A | B | A XOR B |
 | - | - | :-----: |
@@ -11,10 +11,10 @@ in computer science and cryptography.
 | 1 | 0 | 1       |
 | 1 | 1 | 0       |
 
-For example, to encrypt the word "HELLO" using the key "KEY", you should first
-convert `HELLO` to binary...
+Na primjer, za šifriranje riječi "HELLO" koristeći ključ "KEY", najprije
+trebate pretvoriti `HELLO` u binarni zapis...
 
-| Char | ASCII | Binary   |
+| Znak | ASCII | Binarno  |
 | ---- | ----- | -------- |
 | H    | 72    | 01001000 |
 | E    | 69    | 01000101 |
@@ -22,16 +22,16 @@ convert `HELLO` to binary...
 | L    | 76    | 01001100 |
 | O    | 79    | 01001111 |
 
-...then convert `KEY` to binary...
+...zatim pretvoriti `KEY` u binarni zapis...
 
-| Char | ASCII | Binary   |
+| Znak | ASCII | Binarno  |
 | ---- | ----- | -------- |
 | K    | 75    | 01001011 |
 | E    | 69    | 01000101 |
 | Y    | 89    | 01011001 |
 
-...and finally do the encryption - XOR each character with key, repeating the
-key as many times as necessary:
+...i konačno provesti šifriranje — XOR svaki znak s ključem, ponavljajući ključ
+onoliko puta koliko je potrebno:
 
 ```text
 H ⊕ K: 01001000 ⊕ 01001011 = 00000011 (ASCII 3)
@@ -41,12 +41,11 @@ L ⊕ K: 01001100 ⊕ 01001011 = 00000111 (ASCII 7)
 O ⊕ E: 01001111 ⊕ 01000101 = 00001010 (ASCII 10)
 ```
 
-The resulting ciphertext consists of ASCII non-printable characters with
-decimal values 3, 0, 21, 7, and 10. If an attacker intercepted this message,
-they would see only unreadable binary data, since the characters are
-non-printable.
+Dobiveni šifrirani tekst sastoji se od ASCII znakova koji se ne mogu ispisati s
+decimalnim vrijednostima 3, 0, 21, 7 i 10. Ako bi napadač presreo ovu poruku,
+vidio bi samo nečitljive binarne podatke, budući da znakovi nisu ispisivi.
 
-To decrypt the ciphertext you should XOR ciphertext with same key:
+Za dešifriranje šifriranog teksta trebate XOR-irati šifrirani tekst s istim ključem:
 
 ```text
 3  ⊕ K: 00000011 ⊕ 01001011 = 01001000 (ASCII 72 → H)
@@ -56,40 +55,39 @@ To decrypt the ciphertext you should XOR ciphertext with same key:
 10 ⊕ E: 00001010 ⊕ 01000101 = 01001111 (ASCII 79 → O)
 ```
 
-The XOR operation is self-inverse — applying XOR twice with the same key
-restores the original data.
+XOR operacija je samoinverzna — primjena XOR-a dva puta s istim ključem
+vrača originalne podatke.
 
-In real-world applications, reusing the same key for multiple messages makes
-XOR encryption vulnerable to frequency analysis and known-plaintext attacks.
-XOR alone doesn’t provide strong security unless the key is properly managed
-and is at least as long as the message — as in a one-time pad. However, for
-educational purposes and basic demonstrations of cryptographic principles, XOR
-is simple and ideal.
+U stvarnim primjenama, ponovna upotreba istog ključa za više poruka čini
+XOR šifriranje ranjivim na frekventnu analizu i napade poznatog otvorenog teksta.
+XOR sam po sebi ne pruža jaku sigurnost osim ako se ključem pravilno upravlja
+i nije kraći od poruke — kao kod jednokratne bilježnice. Međutim, u obrazovne
+svrhe i za osnovna demonstriranja kriptografskih načela, XOR je jednostavan i idealan.
 
-## Simple assignment
+## Jednostavan zadatak
 
-Create a console application in any programming language to encrypt and decrypt
-messages using the XOR operation.
+Napravite konzolnu aplikaciju u bilo kojem programskom jeziku za šifriranje i
+dešifriranje poruka koristeći XOR operaciju.
 
-The allowed alphabet for messages (both plaintext and key) includes only
-lowercase English letters:
+Dopuštena abeceda za poruke (otvoreni tekst i ključ) uključuje samo
+mala slova engleske abecede:
 
 ```text
 Σ = { a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z }
 ```
 
-Spaces, uppercase letters, numbers, and other characters are not allowed.
+Razmaci, velika slova, brojevi i drugi znakovi nisu dopušteni.
 
-In the first line of the user input there will be a message `m` no longer than
-one hundred ASCII characters for plaintext or 800 bits for ciphertext, in the
-second line there will be a key `k` no longer than five characters, and in the
-third line there will be an integer `s`, which represents the operation. If
-$s=1$ then `m` is plaintext and should be encrypted, and if $s=2$, then `m` is
-ciphertext in binary and should be decrypted.
+U prvom retku korisničkog unosa bit će poruka `m` duljine do sto ASCII znakova
+za otvoreni tekst ili 800 bita za šifrirani tekst, u drugom retku bit će ključ
+`k` duljine do pet znakova, a u trećem retku bit će cijeli broj `s`, koji
+predstavlja operaciju. Ako je $s=1$, tada je `m` otvoreni tekst i treba biti
+šifriran, a ako je $s=2$, tada je `m` šifrirani tekst u binarnom obliku i treba
+biti dešifriran.
 
-### Test example 1
+### Test primjer 1
 
-If the input is:
+Ako je unos:
 
 ```text
 nikolatesla
@@ -97,15 +95,15 @@ ser
 1
 ```
 
-the output should be:
+izlaz bi trebao biti:
 
 ```text
 0001110100001100000110010001110000001001000100110000011100000000000000010001111100000100
 ```
 
-### Test example 2
+### Test primjer 2
 
-If the input is:
+Ako je unos:
 
 ```text
 0001110100001100000110010001110000001001000100110000011100000000000000010001111100000100
@@ -113,63 +111,63 @@ ser
 2
 ```
 
-the output should be:
+izlaz bi trebao biti:
 
 ```text
 nikolatesla
 ```
 
-## Start the assignment
+## Započnite zadatak
 
-[Implement the cypher here ](https://arena.petlja.org/sr-Latn-RS/competition/123-co-create#tab_142947)
+[Implementirajte šifru ovdje ](https://arena.petlja.org/sr-Latn-RS/competition/123-co-create#tab_142947)
 
-## Solution hints
+## Savjeti za rješenje
 
-Each character is stored in memory as an 8-bit ASCII value (for lowercase
-letters a–z, the codes range from 97 to 122). To encrypt a character, take its
-ASCII value and the ASCII value of the corresponding key character (cycling
-through the key), apply XOR (^) between them and output the result as an 8-bit
-binary number.
+Svaki znak pohranjen je u memoriji kao 8-bitna ASCII vrijednost (za mala slova
+a–z, kodovi se kreću od 97 do 122). Za šifriranje znaka uzmite njegovu ASCII
+vrijednost i ASCII vrijednost odgovarajućeg znaka ključa (ciklički prolazeći
+kroz ključ), primijenite XOR (^) između njih i ispišite rezultat kao 8-bitni
+binarni broj.
 
-To decrypt, follow the reverse process, take each 8-bit binary block from
-ciphertext, convert it back to an integer (0–255), XOR with the ASCII value of
-the corresponding key character and convert the result back to a character.
+Za dešifriranje slijedite obrnuti postupak — uzmite svaki 8-bitni binarni blok
+iz šifriranog teksta, pretvorite ga natrag u cijeli broj (0–255), XOR-irajte s
+ASCII vrijednošću odgovarajućeg znaka ključa i pretvorite rezultat natrag u znak.
 
-## Advanced XOR Assignments (optional)
+## Napredni XOR zadaci (opcionalno)
 
-### Expand the allowed alphabet
+### Proširite dopuštenu abecedu
 
-Allow lowercase and uppercase letters, spaces, numbers, and punctuation.
-Non-letter characters are XORed with the key in the same way.
+Dopustite mala i velika slova, razmake, brojeve i interpunkciju.
+Znakovi koji nisu slova XOR-iraju se s ključem na isti način.
 
-## Use functions
+## Koristite funkcije
 
-Create two functions: `encrypt()` for encrypting messages and `decrypt()` for
-decrypting messages. Use the created functions in your main program.
+Napravite dvije funkcije: `encrypt()` za šifriranje poruka i `decrypt()` za
+dešifriranje poruka. Koristite kreirane funkcije u svom glavnom programu.
 
-### Create a Class
+### Napravite klasu
 
-Create an `XorCipher` class that:
+Napravite klasu `XorCipher` koja:
 
-* Stores the key,
-* Provides `encrypt()` and `decrypt()` methods,
-* Optionally includes a private helper to repeat the key over the message length.
+* Pohranjuje ključ,
+* Pruža metode `encrypt()` i `decrypt()`,
+* Opcionalno uključuje privatnu pomoćnu metodu za ponavljanje ključa duž duljine poruke.
 
-Use the created class in your main program.
+Koristite kreiranu klasu u svom glavnom programu.
 
-### Accept Command Line Arguments
+### Prihvatite argumente naredbenog retka
 
-Instead of waiting for the user input, create a console application that
-accepts the following command line arguments:
+Umjesto čekanja korisničkog unosa, napravite konzolnu aplikaciju koja
+prihvaća sljedeće argumente naredbenog retka:
 
-1. argument `m` for specifying the message,
-2. argument `k` for specifying the key, and
-3. argument `s` for specifying the operation (`1` to encrypt, `2` to decrypt).
+1. argument `m` za specificiranje poruke,
+2. argument `k` za specificiranje ključa, i
+3. argument `s` za specificiranje operacije (`1` za šifriranje, `2` za dešifriranje).
 
-### Encrypt and Decrypt Files
+### Šifrirajte i dešifrirajte datoteke
 
-Use the knowledge you gained so far to create a program that can:
+Koristite znanje koje ste stekli do sada za izradu programa koji može:
 
-* read plaintext or binary ciphertext from a file,
-* encrypt or decrypt it with a given key, and
-* write the result back to a new file.
+* čitati otvoreni tekst ili binarni šifrirani tekst iz datoteke,
+* šifrirati ili dešifrirati ga zadanim ključem, i
+* zapisati rezultat u novu datoteku.

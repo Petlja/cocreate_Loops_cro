@@ -1,67 +1,63 @@
-# Caesar Cipher
+# Cezarova šifra
 
-One of the great generals who used coded messages was Julius Caesar, around 50
-BC. When Caesar sent messages to his generals, he encrypted them by shifting
-the letters in the text by a fixed number of places in the alphabet. The
-recipients of the message could decipher it because they knew the shift value
-— while everyone else saw only meaningless text.
+Jedan od velikih generala koji je koristio kodirane poruke bio je Julije Cezar, oko 50.
+p.n.e. Kada je Cezar slao poruke svojim generalima, šifrirao ih je pomicanjem
+slova u tekstu za fiksni broj mjesta u abecedi. Primatelji poruke mogli su je
+dešifrirati jer su znali vrijednost pomaka — dok su svi ostali vidjeli samo
+besmisleni tekst.
 
-For example, if you wrote `NIKOLATESLA` and shifted each letter three places to
-the right:
+Na primjer, ako napišete `NIKOLATESLA` i pomaknete svako slovo tri mjesta udesno:
 
 ```text
 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 X Y Z A B C D E F G H I J K L M N O P Q R S T U V W
 ```
 
-The letter `N` becomes `K`, `I` becomes `F`, and so on. So, each letter is
-replaced by another letter that is a fixed number of positions further along in
-the alphabet. When the end of the alphabet is reached, the sequence continues
-from the beginning. The result of the shift operation by three letters to the
-right would be the encrypted message `KFHLIXQBPIX`. On the other hand, if each
-letter in the resulting word were shifted three letters to the left:
+Slovo `N` postaje `K`, `I` postaje `F`, i tako dalje. Dakle, svako slovo
+zamjenjuje se drugim slovom koje je za fiksni broj pozicija dalje u abecedi.
+Kada se dođe do kraja abecede, niz se nastavlja od početka. Rezultat operacije
+pomaka za tri slova udesno bio bi šifrirana poruka `KFHLIXQBPIX`. S druge strane,
+ak bi se svako slovo u dobivenoj riječi pomaknulo tri slova ulijevo:
 
 ```text
 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
 ```
 
-The letter `K` becomes `N`, `F` becomes `I`, and so on. The result of the shift
-operation would be the original decrypted message `NIKOLATESLA`.
+Slovo `K` postaje `N`, `F` postaje `I`, i tako dalje. Rezultat operacije
+pomaka bio bi izvorna dešifrirana poruka `NIKOLATESLA`.
 
-![Caesar Cipher Left Shift](./images/caesar1.png)
+![Cezarova šifra pomak ulijevo](./images/caesar1.png)
 
-## Simple assignment
+## Jednostavan zadatak
 
-Create a console application in any programming language to encrypt and decrypt
-messages using the Caesar cipher.
+Napravite konzolnu aplikaciju u bilo kojem programskom jeziku za šifriranje i
+dešifriranje poruka koristeći Cezarovu šifru.
 
 ```{infonote}
-First student (*the driver*) should be focused on syntax while writing the
-code for message encryption. Second student (*the navigator*) should review
-each line of code as it is typed, looking for the mistakes, asking questions,
-and suggesting improvements. After that, the students should switch roles,
-and continue with writing decryption code.
+Prvi učenik (*vozač*) treba se fokusirati na sintaksu dok piše kod za šifriranje
+poruke. Drugi učenik (*navigator*) treba pregledavati svaki redak koda dok se
+tipka, tražiti pogreške, postavljati pitanja i predlagati poboljšanja. Nakon toga,
+učenici trebaju zamijeniti uloge i nastaviti s pisanjem koda za dešifriranje.
 ```
 
-The allowed alphabet for messages (for plaintext and ciphertext) can include
-only lowercase letters of the English alphabet:
+Dopuštena abeceda za poruke (za otvoreni tekst i šifrirani tekst) može uključivati
+samo mala slova engleske abecede:
 
 ```text
 Σ = { a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z }
 ```
 
-Spaces, uppercase letters, numbers, and other characters are not allowed.
+Razmaci, velika slova, brojevi i drugi znakovi nisu dopušteni.
 
-In the first line of the user input there will be a message `m` no longer than
-one hundred characters, in the second line there will be an integer `n` which
-represents the shift value ($1 \leq n < 26$), and in the third line there will
-be an integer `s`, which represents the encryption direction. If $s=1$ then `m`
-should be encrypted, and if $s=2$, then `m` should be decrypted.
+U prvom retku korisničkog unosa bit će poruka `m` duljine do sto znakova, u
+drugom retku bit će cijeli broj `n` koji predstavlja vrijednost pomaka ($1 \leq n < 26$),
+a u trećem retku bit će cijeli broj `s`, koji predstavlja smjer šifriranja. Ako je $s=1$
+tada `m` treba biti šifriran, a ako je $s=2$, tada `m` treba biti dešifriran.
 
-### Test example 1
+### Test primjer 1
 
-If the input is:
+Ako je unos:
 
 ```text
 nikolatesla
@@ -69,15 +65,15 @@ nikolatesla
 1
 ```
 
-the output should be:
+izlaz bi trebao biti:
 
 ```text
 kfhlixqbpix
 ```
 
-### Test example 2
+### Test primjer 2
 
-If the input is:
+Ako je unos:
 
 ```text
 kfhlixqbpix
@@ -85,20 +81,20 @@ kfhlixqbpix
 2
 ```
 
-the output should be:
+izlaz bi trebao biti:
 
 ```text
 nikolatesla
 ```
 
-## Start the assignment
+## Započnite zadatak
 
-[Implement the cypher here ](https://arena.petlja.org/sr-Latn-RS/competition/123-co-create#tab_142923)
+[Implementirajte šifru ovdje ](https://arena.petlja.org/sr-Latn-RS/competition/123-co-create#tab_142923)
 
-## Solution hints
+## Savjeti za rješenje
 
-Since there are 26 letters in the English alphabet, the position of each letter
-can be represented by a number from 0 to 25.
+Budući da engleska abeceda ima 26 slova, pozicija svakog slova može se
+predstaviti brojem od 0 do 25.
 
 * a → 0
 * b → 1
@@ -106,81 +102,79 @@ can be represented by a number from 0 to 25.
 * ...
 * z → 25
 
-To **encrypt** a letter, you can use the following formula:
+Za **šifriranje** slova možete koristiti sljedeću formulu:
 
 ```text
-new_letter_position = (current_letter_position + shift_value) mod 26
+nova_pozicija_slova = (trenutna_pozicija_slova + vrijednost_pomaka) mod 26
 ```
 
-`original_position` represents the numeric value of the letter in the alphabet,
-`shift_value` represents number of positions to move (1–25), and `mod 26`
-ensures that the result wraps around to the start of the alphabet if it goes
-past `z`.
+`trenutna_pozicija` predstavlja numeričku vrijednost slova u abecedi,
+`vrijednost_pomaka` predstavlja broj pozicija za pomicanje (1–25), a `mod 26`
+osigurava da se rezultat vraća na početak abecede ako prelazi `z`.
 
-To **decrypt** a letter, you can use the following formula:
+Za **dešifriranje** slova možete koristiti sljedeću formulu:
 
 ```text
-new_letter_position = (current_letter_position - shift_value + 26) mod 26
+nova_pozicija_slova = (trenutna_pozicija_slova - vrijednost_pomaka + 26) mod 26
 ```
 
-Similarly like encryption, but you subtract the shift value, and `+ 26` ensures
-that the value does not become negative before applying `mod 26`.
+Slično kao kod šifriranja, ali oduzimate vrijednost pomaka, a `+ 26` osigurava
+da vrijednost ne postane negativna prije primjene `mod 26`.
 
-## Advanced Caesar Cipher Assignments (optional)
+## Napredni zadaci s Cezarovom šifrom (opcionalno)
 
-### Expand the allowed aplhabet
+### Proširite dopuštenu abecedu
 
-Create a console application in any programming language to encrypt and decrypt
-messages using the Caesar cipher. The allowed alphabet for messages (for
-plaintext and ciphertext) can include lowercase and uppercase letters of the
-English alphabet, spaces, numbers, and punctuation!
+Napravite konzolnu aplikaciju u bilo kojem programskom jeziku za šifriranje i
+dešifriranje poruka koristeći Cezarovu šifru. Dopuštena abeceda za poruke (za
+otvoreni tekst i šifrirani tekst) može uključivati mala i velika slova engleske
+abecede, razmake, brojeve i interpunkcijske znakove!
 
-The application must encrypt or decrypt only lowercase and uppercase letters.
-Spaces, numbers, and punctuation marks should remain unchanged during
-encryption or decryption.
+Aplikacija mora šifrirati ili dešifrirati samo mala i velika slova. Razmaci,
+brojevi i interpunkcijski znakovi trebaju ostati nepromijenjeni tijekom
+šifriranja ili dešifriranja.
 
-In the first line of the standard input there will be a message `m` no longer
-than one hundred characters, in the second line there will be an integer `n`
-which represents the shift ($1 \leq n < 26$), and in the third line there will
-be an integer `s`, which represents the encryption direction. If $s=1$ then `m`
-should be encrypted, and if $s=2$, then `m` should be decrypted.
+U prvom retku standardnog unosa bit će poruka `m` duljine do sto znakova, u
+drugom retku bit će cijeli broj `n` koji predstavlja pomak ($1 \leq n < 26$),
+a u trećem retku bit će cijeli broj `s`, koji predstavlja smjer šifriranja. Ako je $s=1$
+tada `m` treba biti šifriran, a ako je $s=2$, tada `m` treba biti dešifriran.
 
-## Use the functions
+## Koristite funkcije
 
-Create two functions: one for encrypting messages and one for decrypting
-messages. Use the created functions in your main program.
+Napravite dvije funkcije: jednu za šifriranje poruka i jednu za dešifriranje
+poruka. Koristite kreirane funkcije u svom glavnom programu.
 
-## Create a Class
+## Napravite klasu
 
-Create a `CaesarCipher` class that contains:
+Napravite klasu `CaesarCipher` koja sadrži:
 
-* a constructor with a parameter that accepts the shift value and ensures that
-the value is within the allowed range,
-* a private property to store the shift value, with getter and setter methods,
-* a public method to encrypt the message,
-* a public method to decrypt the message, and
-* optionally, include a private method to process messages, which will be used
-by both encryption and decryption methods.
+* konstruktor s parametrom koji prihvaća vrijednost pomaka i osigurava da
+vrijednost bude unutar dopuštenog raspona,
+* privatno svojstvo za pohranu vrijednosti pomaka, s getter i setter metodama,
+* javnu metodu za šifriranje poruke,
+* javnu metodu za dešifriranje poruke, i
+* opcionalno, uključite privatnu metodu za obradu poruka, koja će se koristiti
+u metodama za šifriranje i dešifriranje.
 
-Use the created class in your main program.
+Koristite kreiranu klasu u svom glavnom programu.
 
-## Accept Command Line Arguments
+## Prihvatite argumente naredbenog retka
 
-Instead of waiting for the user input, create a console application that
-accepts the following command line arguments:
+Umjesto čekanja korisničkog unosa, napravite konzolnu aplikaciju koja
+prihvaća sljedeće argumente naredbenog retka:
 
-1. argument `m` for specifying the message,
-2. argument `n` for specifying the shift value (`0` to `25`), and
-3. argument `s` for specifying the shift direction (`1` for encryption, and `2`
-for decryption).
+1. argument `m` za specificiranje poruke,
+2. argument `n` za specificiranje vrijednosti pomaka (`0` do `25`), i
+3. argument `s` za specificiranje smjera pomaka (`1` za šifriranje, i `2`
+za dešifriranje).
 
-## Encrypt and decrypt files
+## Šifrirajte i dešifrirajte datoteke
 
-Use the knowledge you gained so far to create a console application for
-encrypting and decrypting text files. Your application should accept the
-following command line arguments:
+Koristite znanje koje ste stekli do sada za izradu konzolne aplikacije za
+šifriranje i dešifriranje tekstualnih datoteka. Vaša aplikacija treba prihvatiti
+sljedeće argumente naredbenog retka:
 
-1. argument `m` for specifying the filename (or a path),
-2. argument `n` for specifying the shift value (`0` to `25`), and
-3. argument `s` for specifying the shift direction (`1` for encryption, and `2`
-for decryption).
+1. argument `m` za specificiranje naziva datoteke (ili puta),
+2. argument `n` za specificiranje vrijednosti pomaka (`0` do `25`), i
+3. argument `s` za specificiranje smjera pomaka (`1` za šifriranje, i `2`
+za dešifriranje).
