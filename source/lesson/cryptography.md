@@ -105,12 +105,13 @@ Potpuno šifriranje može pomoći kriminalcima i teroristima da sakriju svoje ak
 Sigurnosne službe ponekad moraju imati pristup komunikaciji radi zaštite građana.
 Društvo mora pronaći ravnotežu između privatnosti i sigurnosti.
 
-Razmatranje argumenata možete obaviti u skupinama između dva sata ili na samom satu, a potom slijedi razmjena stajališta (svaka skupina ima 5 minuta za obrazlaganje svog stajališta). Ostali učenici — porota — potom postavljaju pitanja, a obje skupine imaju 10-ak minuta za odgovaranje.
+Razmatranje argumenata možete obaviti u skupinama između dva sata ili na samom satu. Potom slijedi razmjena stajališta — svaka skupina ima 5 minuta za obrazlaganje svog stajališta. Ostali učenici — porota — potom postavljaju pitanja, a obje skupine imaju 10-ak minuta za odgovaranje.
 
 Ocjenjivanje i određivanje pobjedničke skupine nije nužno, ali jest poželjna zajednička diskusija o svim iznesenim argumentima. Neka dodatna pitanja za diskusiju mogu biti:
-Treba li policija imati pravo pristupa šifriranim porukama osumnjičenih osoba?
-Biste li pristali da se vaše poruke analiziraju ako bi to spriječilo teroristički napad?
-Koji su rizici ako netko ima pristup svim našim podacima?
-Jesu li društvene mreže dovoljno transparentne u pogledu podataka koje prikupljaju?
-Jesu li mladi svjesni koliko osobnih podataka ostavljaju na internetu?
-Je li lozinka dovoljna za zaštitu računa ili su potrebne dodatne mjere sigurnosti?
+
+- Treba li policija imati pravo pristupa šifriranim porukama osumnjičenih osoba?
+- Biste li pristali da se vaše poruke analiziraju ako bi to spriječilo teroristički napad?
+- Koji su rizici ako netko ima pristup svim našim podacima?
+- Jesu li društvene mreže dovoljno transparentne u pogledu podataka koje prikupljaju?
+- Jesu li mladi svjesni koliko osobnih podataka ostavljaju na internetu?
+- Je li lozinka dovoljna za zaštitu računa ili su potrebne dodatne mjere sigurnosti?
