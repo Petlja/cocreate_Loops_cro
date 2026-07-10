@@ -39,10 +39,11 @@ acdtkatawatn
 Za dešifriranje, primatelj ponovo omota traku oko štapa istog promjera
 i čita vertikalno kako bi rekonstruirao originalnu poruku.
 
-## Jednostavan zadatak
+## Prvi zadatak
 
-Napravite konzolnu aplikaciju u bilo kojem programskom jeziku za šifriranje i
-dešifriranje poruka koristeći Skital šifru.
+Napravi konzolnu aplikaciju u bilo kojem programskom jeziku koja će šifrirati i
+dešifrirati poruke koristeći Skital šifru. Koristi razvojno okruženje koje
+koristite na satovima programiranja.
 
 Dopuštena abeceda za poruke uključuje samo mala slova engleske abecede:
 
@@ -50,7 +51,7 @@ Dopuštena abeceda za poruke uključuje samo mala slova engleske abecede:
 Σ = { a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z }
 ```
 
-Razmaci, velika slova, brojevi i drugi znakovi nisu dopušteni.
+Razmaci, velika slova, brojevi i drugi znakovi nisu dopušteni!
 
 U prvom retku korisničkog unosa bit će poruka `m` duljine do sto znakova. U
 drugom retku bit će cijeli broj `k` (broj stupaca – opseg štapa). U trećem
@@ -89,10 +90,6 @@ izlaz bi trebao biti:
 attackatdawn
 ```
 
-## Započnite zadatak
-
-[Implementirajte šifru ovdje ](https://arena.petlja.org/sr-Latn-RS/competition/123-co-create#tab_142946)
-
 ## Savjeti za rješenje
 
 Za **šifriranje**, zapišite otvoreni tekst vertikalno u tablicu s `k` stupcima.
@@ -100,7 +97,7 @@ Za **šifriranje**, zapišite otvoreni tekst vertikalno u tablicu s `k` stupcima
 **dešifriranje**, zapišite šifrirani tekst redak po redak u tablicu s `k`
 stupcima, čitajte tablicu vertikalno kako biste rekonstruirali otvoreni tekst.
 
-## Napredni zadaci s Skital šifrom (opcionalno)
+## Složeniji zadaci sa Skital šifrom (opcionalno)
 
 ### Proširite dopuštenu abecedu
 
