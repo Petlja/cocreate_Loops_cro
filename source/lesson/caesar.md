@@ -29,10 +29,9 @@ pomaka bio bi izvorna dešifrirana poruka `NIKOLATESLA`.
 
 ![Cezarova šifra pomak ulijevo](./images/caesar1.png)
 
-## Jednostavan zadatak
+## Zadatak za razmišljanje
 
-Napravite konzolnu aplikaciju u bilo kojem programskom jeziku za šifriranje i
-dešifriranje poruka koristeći Cezarovu šifru.
+Razmisli kako bi napravio konzolnu aplikaciju u bilo kojem programskom jeziku koja će šifrirati i dešifrirati poruke koristeći Cezarovu šifru. Dati su neki savjeti. Kada ih pročitaš, probaj napraviti konzolnu aplikaciju u razvojnom okruženju koje koristite na satovima programiranja.
 
 ```{infonote}
 Prvi učenik (*vozač*) treba se fokusirati na sintaksu dok piše kod za šifriranje
@@ -87,10 +86,6 @@ izlaz bi trebao biti:
 nikolatesla
 ```
 
-## Započnite zadatak
-
-[Implementirajte šifru ovdje ](https://arena.petlja.org/sr-Latn-RS/competition/123-co-create#tab_142923)
-
 ## Savjeti za rješenje
 
 Budući da engleska abeceda ima 26 slova, pozicija svakog slova može se
@@ -121,7 +116,7 @@ nova_pozicija_slova = (trenutna_pozicija_slova - vrijednost_pomaka + 26) mod 26
 Slično kao kod šifriranja, ali oduzimate vrijednost pomaka, a `+ 26` osigurava
 da vrijednost ne postane negativna prije primjene `mod 26`.
 
-## Napredni zadaci s Cezarovom šifrom (opcionalno)
+## Složeniji zadaci s Cezarovom šifrom (opcionalno)
 
 ### Proširite dopuštenu abecedu
 
@@ -143,6 +138,8 @@ tada `m` treba biti šifriran, a ako je $s=2$, tada `m` treba biti dešifriran.
 
 Napravite dvije funkcije: jednu za šifriranje poruka i jednu za dešifriranje
 poruka. Koristite kreirane funkcije u svom glavnom programu.
+
+Ovdje možete raditi u paru — jedna osoba treba šifrirati poruku, a druga je dešifrirati!
 
 ## Napravite klasu
 
