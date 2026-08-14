@@ -1,7 +1,7 @@
 ﻿---
 status: exclude
 alias: Loops_and_Cryptography_cro
-lang: en
+lang: hr
 short_description: Uvod u kriptografiju s petljama
 long_description: >
     <p>U ovom tečaju naučit ćeš kako koristiti petlje nad znakovima i nizovima znakova za implementaciju osnovnih kriptografskih algoritama i zašto je to važno.</p>
