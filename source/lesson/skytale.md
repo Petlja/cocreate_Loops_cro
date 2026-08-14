@@ -1,11 +1,5 @@
 # Skital
 
-Nakon završetka ove lekcije, moći ćete:
-
-* Objasniti kako funkcionira Skital šifra.
-* Implementirati šifriranje i dešifriranje koristeći jednostavne operacije s poljima ili nizovima znakova.
-* Razumjeti kako se fizički uređaji za šifriranje mogu digitalno modelirati.
-
 Skital je jedan od najstarijih poznatih alata za šifriranje, koji datira iz
 antičke Grčke oko 400. p.n.e. Bio je to jednostavan cilindrični uređaj koji su
 Spartanci koristili za slanje tajnih poruka tijekom vojnih pohoda.

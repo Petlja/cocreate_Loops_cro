@@ -23,7 +23,7 @@ myst_enable_extensions = [ "colon_fence",
 
 templates_path = ['_templates']
 exclude_patterns = []
-language = 'en'
+language = 'hr'
 
 import plct_sphinx_components
 html_static_path = ['_static'] + plct_sphinx_components.extensions.static_dirs()
@@ -33,7 +33,7 @@ copybutton_selector = "div:not(.no-copybutton) > div.highlight > pre"
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_title = 'PLCT Template'
+html_title = 'Uvod u kriptografiju s petljama'
 
 def get_builder_from_args():
     import sys

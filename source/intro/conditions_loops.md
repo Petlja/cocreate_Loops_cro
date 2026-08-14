@@ -1,7 +1,17 @@
 # Uvjeti i petlje
 
-Za uspješno svladavanje materijala u sljedećoj lekciji potrebno je poznavati
-osnovne činjenice o radu s uvjetima i petljama.
+Za uspješno svladavanje materijala o šifriranju potrebno je poznavati osnovne činjenice o radu s uvjetima i petljama. Uvjeti i petlje temeljni su mehanizmi koji računalnim programima omogućuju donošenje odluka i ponavljanje određenih radnji. Zahvaljujući uvjetima, program može reagirati na različite načine ovisno o podacima koje prima, dok petlje omogućuju učinkovito ponavljanje istih koraka više puta. Ovi koncepti od ključne su važnosti u šifriranju, jer se algoritmi za zaštitu podataka temelje na nizu pravila, provjera i ponavljajućih postupaka koji osiguravaju sigurnost informacija.
+
+Podsjetimo se nekih osnova! Ako ti to područje i dalje ne bude jasno, prođi kroz lekciju na Petlji koja je baš tome posvećena.
+
+Poveznica na Petljinu lekciju o petljama je [ovdje](https://petlja.org/en/biblioteka/r/lekcije/python-za-svakog/01_karel_eng_02_for)
+<!--Poveznica za srpsku verziju tečaja https://www.petlja.org/sr-Latn-RS/kurs/477/12/5844 -->
+
+```{learnmorenote} Za nastavnike
+
+Poveznica na Petljinu lekciju na srpskom https://www.petlja.org/sr-Latn-RS/kurs/477/12/5844
+Poveznica za verzije tečaja koje nisu na srpskom https://petlja.org/en/biblioteka/r/lekcije/python-za-svakog/01_karel_eng_02_for
+```
 
 ## Uvjeti
 
