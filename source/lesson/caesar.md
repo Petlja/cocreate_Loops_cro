@@ -134,8 +134,7 @@ nova_pozicija_slova = (trenutna_pozicija_slova - vrijednost_pomaka + 26) mod 26
 Slično kao kod šifriranja, ali oduzimate vrijednost pomaka, a `+ 26` osigurava
 da vrijednost ne postane negativna prije primjene `mod 26`.
 
-
-## Napredni zadaci s Cezarovom šifrom (opcionalno)
+## Složeniji zadaci s Cezarovom šifrom (opcionalno)
 
 ### Proširite dopuštenu abecedu
 
@@ -159,9 +158,7 @@ tada `m` treba biti šifriran, a ako je $s=2$, tada `m` treba biti dešifriran.
 Napravite dvije funkcije: jednu za šifriranje poruka i jednu za dešifriranje
 poruka. Koristite kreirane funkcije u svom glavnom programu.
 
-Ovdje možete raditi u paru - jedna osoba treba šifrirati poruku, a druga je
-dešifrirati!
-
+Ovdje možete raditi u paru — jedna osoba treba šifrirati poruku, a druga je dešifrirati!
 
 ## Napravite klasu
 

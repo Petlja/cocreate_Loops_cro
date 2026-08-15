@@ -34,9 +34,11 @@ acdtkatawatn
 ```
 
 
-Za dešifriranje, primatelj ponovo omota traku oko štapa istog promjera i čita
-vertikalno kako bi rekonstruirao originalnu poruku.
+## Prvi zadatak
 
+Napravi konzolnu aplikaciju u bilo kojem programskom jeziku koja će šifrirati i
+dešifrirati poruke koristeći Skital šifru. Koristi razvojno okruženje koje
+koristite na satovima programiranja.
 
 ## Prvi zadatak
 
@@ -50,6 +52,7 @@ Dopuštena abeceda za poruke sadrži samo mala slova engleske abecede:
 Σ = { a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z }
 ```
 
+Razmaci, velika slova, brojevi i drugi znakovi nisu dopušteni!
 
 Razmaci, velika slova, brojevi i drugi znakovi nisu dopušteni!
 
@@ -103,7 +106,7 @@ Za **šifriranje**, zapišite otvoreni tekst vertikalno u tablicu s `k` stupaca.
 a zatim čitajte tablicu vertikalno kako biste rekonstruirali otvoreni tekst.
 
 
-## Napredni zadaci s Skital šifrom (opcionalno)
+## Složeniji zadaci sa Skital šifrom (opcionalno)
 
 ### Proširite dopuštenu abecedu
 

@@ -5,13 +5,11 @@ lang: hr
 
 short_description: Uvod u kriptografiju s petljama
 long_description: >
-    <p>U ovom tečaju naučit ćete kako koristiti petlje na znakovima i nizovima znakova za implementaciju osnovnih kriptografskih algoritama i zašto je to važno.</p>
-    
-    <p>Ovaj tečaj izrađen je u okviru Erasmus+ projekta <a rel="license" href="https://erasmus-cocreate.petlja.org">CoCreate - Computer-Supported Collaborative Learning for Inclusive Education</a>
+    <p>U ovom tečaju naučit ćeš kako koristiti petlje nad znakovima i nizovima znakova za implementaciju osnovnih kriptografskih algoritama i zašto je to važno.</p>
+    <p>Ovaj tečaj nastao je u okviru Erasmus+ projekta <a rel="license" href="https://erasmus-cocreate.petlja.org">CoCreate - Computer-Supported Collaborative Learning for Inclusive Education</a>
     </p>
     <p>
-
-    <br>Ovaj tečaj objavio je Petlja Foundation pod <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.hr">Creative Commons Autorstvo 4.0 Međunarodna licenca (CC BY 4.0)</a>.
+    <br>Ovaj tečaj objavio je Petlja Foundation pod <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.sr_LATN">Creative Commons Autorstvo 4.0 Međunarodna licenca (CC BY 4.0)</a>.
     </p>
 
 will_learn:
@@ -36,7 +34,7 @@ useful:
 
 # Petlje i kriptografija
 
-Pred vama je uvodno predavanje o petljama na znakovima i nizovima znakova
+Počinješ uvodnu lekciju o petljama nad znakovima i nizovima znakova
 za implementaciju osnovnih kriptografskih algoritama.
 
 Autor tečaja: Petlja Foundation

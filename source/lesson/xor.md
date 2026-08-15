@@ -67,8 +67,8 @@ jednostavan i idealan.
 
 ## Prvi zadatak
 
-Napravite konzolnu aplikaciju u bilo kojem programskom jeziku koja će šifrirati
-i dešifrirati poruke koristeći XOR operaciju. Koristite razvojno okruženje koje
+Napravi konzolnu aplikaciju u bilo kojem programskom jeziku koja će šifrirati i
+dešifrirati poruke koristeći XOR operaciju. Koristi razvojno okruženje koje
 koristite na satovima programiranja.
 
 Dopuštena abeceda za poruke (i za otvoreni tekst i za ključ) sadrži samo mala
@@ -118,7 +118,7 @@ izlaz bi trebao biti:
 nikolatesla
 ```
 
-## Napravite zadatak
+## Uradi zadatak
 
 [Implementirajte šifru ovdje](https://arena.petlja.org/sr-Latn-RS/competition/123-co-create#tab_142947)
 
@@ -134,7 +134,7 @@ Za dešifriranje slijedite obrnuti postupak: uzmite svaki 8-bitni binarni blok
 iz šifriranog teksta, pretvorite ga natrag u cijeli broj (0–255), XOR-irajte s
 ASCII vrijednošću odgovarajućeg znaka ključa i pretvorite rezultat u znak.
 
-## Napredni XOR zadaci (opcionalno)
+## Složeniji XOR zadaci (opcionalno)
 
 ### Proširite dopuštenu abecedu
 
