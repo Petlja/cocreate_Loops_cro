@@ -40,7 +40,7 @@ Učenici se podijele u parove. Svaki par izvlači jednu metodu:
 - Cezar (npr. pomak +3)
 - Skital (npr. 3 retka)
 - XOR (jednostavan ključ, npr. 5)
-Zadatak je da učenici suradničkim radom u paru šifriraju neku rečenicu ili rečenice koje im nastavnik zada (npr. Znanje je moć ili Programiranje je zabavno)
+Zadatak je da učenici suradničkim radom u paru šifriraju neku rečenicu ili rečenice koje im nastavnik zada (npr. Znanje je moć ili Programiranje je zabavno).
 
 ### Korak 2 – Miješanje
 - Sve šifrirane poruke stavljaju se u "kovertu" (ili digitalnu datoteku).

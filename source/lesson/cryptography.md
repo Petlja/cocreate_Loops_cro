@@ -91,7 +91,7 @@ etička pitanja. Kako bismo odgovorili na njih, pripremite se za debatu!
 
 **Tema debate: Treba li pravo na privatnost biti važnije od sigurnosti društva?**
 
-Podjela uloga
+Podjela uloga:
 
 Tim A – Za snažnu zaštitu privatnosti
 
