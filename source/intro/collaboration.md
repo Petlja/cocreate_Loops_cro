@@ -1,19 +1,12 @@
 # Pravila dobre suradnje
 
-1. Svi smo jednaki i međusobno se poštujemo.
-2. Njegujemo dobru atmosferu čak i kada razmišljamo drugačije.
-3. Svi smo odgovorni za grupni rad. U uspješnim grupama svi članovi osjećaju zajedničku ili podijeljenu odgovornost za rezultate grupnog rada.
-4. Pomažemo svima da doprinesu grupnom radu.
-5. Nastojimo uključiti sve u donošenje odluka.
-6. Što više ideja razmatramo, to smo sigurniji da smo odabrali najbolju.
-7. Svaku ideju detaljno razrađujemo, vagamo argumente i osmišljavamo rješenja.
-8. Mudro koristimo svoje vrijeme za rad na zadatku.
-9. Pratimo napredak i promišljamo o sljedećem koraku.
+Prilikom rada u paru ili grupi koji se očekuje u ovoj lekciji, vodite računa o sljedećim pravilima:
 
-Za uspješno izvršavanje zadatka potrebno je pridržavati se pravila suradnje:
-
-* Ravnomjerno dijelite odgovornosti
-* Aktivno slušajte i poštujte tuđe ideje
-* Donosite odluke zajedno
-* Ostanite usredotočeni na zadatak
-* Podržavajte jedni druge i rješavajte probleme u paru
+1. Svi smo jednako vrijedni članovi grupe i dijelimo odgovornosti ravnomjerno.
+2. Njegujemo dobru atmosferu čak i kada mislimo različito.
+3. Pomažemo svima da doprinesu grupnom radu.
+4. Nastojimo uključiti sve u donošenje odluka.
+5. Što više ideja razmatramo, sigurniji smo da smo odabrali najboljу.
+6. Svaku ideju detaljno razrađujemo, vagamo argumente i osmišljavamo rješenja.
+7. Mudro koristimo svoje vrijeme za rad na zadatku.
+8. Pratimo napredak i promišljamo o sljedećem koraku.

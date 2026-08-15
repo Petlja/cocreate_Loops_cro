@@ -1,7 +1,25 @@
 # Uvjeti i petlje
 
-Za uspješno svladavanje materijala u sljedećoj lekciji potrebno je poznavati
-osnovne činjenice o radu s uvjetima i petljama.
+Za uspješno svladavanje materijala o šifriranju potrebno je poznavati osnovne
+činjenice o radu s uvjetima i petljama. Uvjeti i petlje temeljni su mehanizmi
+koji računalnim programima omogućuju donošenje odluka i ponavljanje određenih
+radnji. Zahvaljujući uvjetima, program može reagirati različito ovisno o
+podacima koje dobije, dok petlje omogućuju učinkovito ponavljanje istih koraka
+više puta. Ti su koncepti ključni u šifriranju jer se algoritmi za zaštitu
+podataka temelje na nizu pravila, provjera i ponavljajućih postupaka koji
+osiguravaju sigurnost informacija.
+
+Hajde da se prisjetimo nekih osnova! Ako vam ovo područje i dalje ne bude jasno,
+prođite kroz lekciju na Petlji posvećenu upravo tome.
+
+Poveznica na Petljinu lekciju o petljama je [ovdje](https://www.petlja.org/sr-Latn-RS/kurs/477/12/5844)
+<!--Link za verzije tečaja koje nisu na srpskom https://petlja.org/en/biblioteka/r/lekcije/python-za-svakog/01_karel_eng_02_for -->
+
+```{learnmorenote} Za nastavnike
+
+Link na Petljinu lekciju na srpskom https://www.petlja.org/sr-Latn-RS/kurs/477/12/5844
+Link za verzije tečaja koje nisu na srpskom https://petlja.org/en/biblioteka/r/lekcije/python-za-svakog/01_karel_eng_02_for
+```
 
 ## Uvjeti
 
@@ -16,8 +34,7 @@ Iako se sintaksa razlikuje između jezika, osnovna logika je ista.
 
 ### Naredba `if`
 
-Naredba `if` izvršava blok koda samo ako je zadani uvjet
-istinit.
+Naredba `if` izvršava blok koda samo ako je zadani uvjet istinit.
 
 ```text
 if uvjet then
@@ -37,7 +54,7 @@ if (x > 0) {
 ### Naredba `if-else`
 
 Naredba if-else izvršava jedan blok koda ako je uvjet istinit, a
-drugi blok ako je neistinit.
+drugi blok ako nije.
 
 ```text
 if uvjet then
@@ -47,7 +64,7 @@ else
 ```
 
 Na primjer, u C, C++, C# i Javi, ako želite provjeriti je li `x` veće od
-`0` ili nije veće od `0`, uvjetni iskaz može se napisati ovako:
+`0` ili nije, uvjetni iskaz može se napisati ovako:
 
 ```csharp
 int x = 5;
@@ -120,8 +137,7 @@ Iako se sintaksa razlikuje između jezika, osnovna logika je ista.
 
 ### Petlja `for`
 
-Petlja `for` koristi se kada je broj ponavljanja konačan i
-unaprijed poznat.
+Petlja `for` koristi se kada je broj ponavljanja konačan i unaprijed poznat.
 
 ```text
 for varijabla ← početak to kraj do
@@ -182,6 +198,7 @@ do {
 } while (i <= 9);
 ```
 
+
 ### Petlja `foreach`
 
 Petlja `foreach` (ili `for-each`) koristi se za iteraciju po svim elementima
@@ -230,3 +247,7 @@ za obradu samo određenih elemenata, ili naredba `if` može sadržavati petlju z
 izvođenje ponavljajućih radnji kada je uvjet istinit. Ova mogućnost miješanja i
 ugniježđivanja petlji i uvjeta omogućuje stvaranje složenih algoritama uz
 zadržavanje strukturirane temeljne logike.
+
+
+Različiti oblici petlji bit će potrebni za različite oblike šifriranja o kojima
+ćete učiti na sljedećim stranicama!
