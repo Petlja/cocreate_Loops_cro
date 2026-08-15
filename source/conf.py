@@ -1,5 +1,5 @@
 
-project = 'Uvod u kriptografiju s petljama'
+project = 'PLCT Template'
 copyright = '2025, Fondacija Petlja'
 author = 'Fondacija Petlja'
 

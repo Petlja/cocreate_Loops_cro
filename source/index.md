@@ -1,7 +1,8 @@
-﻿---
+---
 status: exclude
 alias: Loops_and_Cryptography_cro
-lang: en
+lang: hr
+
 short_description: Uvod u kriptografiju s petljama
 long_description: >
     <p>U ovom tečaju naučit ćeš kako koristiti petlje nad znakovima i nizovima znakova za implementaciju osnovnih kriptografskih algoritama i zašto je to važno.</p>
@@ -24,11 +25,12 @@ needed:
     - Tri školska sata
 
 useful:
-    - Dokumentacija Microsoft C++, C i Assembler: https://learn.microsoft.com/en-us/cpp/
-    - GNU C referentni priručnik: https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html
-    - Dokumentacija Sharp jezika: https://learn.microsoft.com/en-us/dotnet/csharp/
-    - Dokumentacija Python jezika: https://docs.python.org/3/
+    - Microsoft C++, C, and Assembler documentation: https://learn.microsoft.com/en-us/cpp/
+    - The GNU C Reference Manual: https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html
+    - Sharp language documentation: https://learn.microsoft.com/en-us/dotnet/csharp/
+    - Python language documentation: https://docs.python.org/3/
 ---
+
 
 # Petlje i kriptografija
 
@@ -38,7 +40,7 @@ za implementaciju osnovnih kriptografskih algoritama.
 Autor tečaja: Petlja Foundation
 
 Ovaj tečaj objavio je Petlja Foundation pod
-[Creative Commons Autorstvo 4.0 Međunarodna licenca (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.sr_LATN).
+[Creative Commons Autorstvo 4.0 Međunarodna licenca (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.hr).
 
 ```{toctree}
 :maxdepth: 2

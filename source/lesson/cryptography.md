@@ -16,8 +16,12 @@ otkrivaju statističke uzorke o originalnoj poruci, koji se mogu iskoristiti
 za razbijanje šifre.
 
 Nakon otkrića frekventne analize slova u poruci, arapski matematičar Al-Kindi
-napisao je u devetom stoljeću knjigu "Rukopis za dešifriranje kriptografskih
-poruka", u kojoj je prvi put opisana upotreba tehnika frekventne analize.
+napisao je u devetom stoljeću knjigu „Rukopis za dešifriranje šifriranih poruka",
+u kojoj je po prvi put opisana upotreba tehnika frekventne analize.
+
+> **Kriptoanaliza** je znanstvena disciplina koja proučava metode „razbijanja"
+> kriptografskih sustava. Riječ kriptoanaliza dolazi od grčkih riječi κρυπτός
+> (*skriveno, tajno*) i αναλύειν (*analizirati*).
 
 > **Kriptoanaliza** je znanstvena disciplina koja proučava metode "razbijanja"
 > kriptografskih sustava. Riječ kriptoanaliza dolazi od grčkih riječi κρυπτός
@@ -31,20 +35,24 @@ Porta i francuski diplomat Blaise de Vigenere.
 
 ![Francuska šifarska naprava u obliku knjige iz 16. stoljeća](./images/cyphermachine.jpg)
 
+
 U 19. stoljeću zaključeno je da kriptografija ne bi smjela ovisiti o tajnosti
 algoritama šifriranja, već o tajnosti ključa. Tajnost samog ključa mora biti
 dovoljna da spriječi razbijanje šifrirane poruke. To je postalo jedno od
-temeljnih načela kriptografije, zapisano 1883. godine od strane Augustea
-Kerckhoffsa (Kerckhoffsovo načelo). Eksplicitnije, ponovio ga je Claude Shannon,
-osnivač teorije informacija i ključna figura u teorijskoj kriptografiji, kao
-Shannonovu maksimu: "neprijatelj poznaje sustav".
+temeljnih načela kriptografije, koje je 1883. zapisao Auguste Kerckhoffs
+(Kerckhoffsovo načelo). Eksplicitnije, ponovio ga je Claude Shannon, osnivač
+teorije informacija i ključna figura u teorijskoj kriptografiji, kao Shannonovu
+maksimu: „neprijatelj poznaje sustav".
 
 Tijekom Drugog svjetskog rata, Nijemci su izgradili stroj pod nazivom **Enigma** koji
 je šifrirao poruke na do tada neviđen način. Međutim, koliko god je bio
 revolucionaran u to vrijeme, saveznici, predvođeni Alanom Turingom, uspjeli su
 razbiti kriptografski sustav Enigme putem kriptoanalize.
 
-![Enigma](./images/enigma.jpg)
+Tijekom Drugog svjetskog rata, Nijemci su izgradili stroj pod nazivom **Enigma**
+koji je šifrirao poruke na do tada neviđen način. Međutim, koliko god je bio
+revolucionaran u to vrijeme, saveznici predvođeni Alanom Turingom uspjeli su
+razbiti kriptografski sustav Enigme kriptoanalizom.
 
 ## Sadašnjost
 
@@ -59,23 +67,25 @@ prikladnija za velike količine podataka. Koristi se kada treba brzo zaštititi
 podatke — npr. šifriranje datoteka na računalu, šifriranje komunikacije tijekom
 videopoziva ili zaštita podataka na disku ili USB uređaju.
 
-![Simetrična enkripcija](./images/symmetric.png)
+S druge strane, kada je važno sigurno razmijeniti ključeve, dokazati tko je
+poslao poruku ili potpisati dokument digitalnim potpisom, koristimo **asimetrično**
+šifriranje, gdje se koristi par javnog i privatnog ključa:
 
 S druge strane, kada je važno sigurno razmijeniti ključeve, dokazati tko je
 poslao poruku ili potpisati dokument digitalnim potpisom, koristimo
 **asimetričnu** enkripciju, gdje se koristi par javnog i privatnog ključa:
 
-![Asimetrična enkripcija](./images/asymmetric.png)
 
 Još jedan važan alat je kriptografska hash funkcija, koja stvara jedinstveni
 digitalni otisak podataka i široko se koristi u zaštiti lozinki, digitalnim
 potpisima i blockchain tehnologiji.
 
+
 ## Budućnost
 
 Gledajući unaprijed, očekuje se da će kvantna kriptografija postati temelj
-sigurne komunikacije. Temelji se na Heisenbergovom načelu neodređenosti kvantne
-fizike. Međutim, kvantno računarstvo također predstavlja prijetnju mnogim
+sigurne komunikacije. Temelji se na Heisenbergovom načelu neodređenosti u
+kvantnoj fizici. Međutim, kvantno računarstvo predstavlja i prijetnju mnogim
 kriptografskim algoritmima koji se danas koriste, što je dovelo do razvoja
 postkvantne kriptografije.
 

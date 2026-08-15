@@ -58,7 +58,7 @@ Unicode je prošireni skup znakova koji uključuje sve ASCII kodove kao svoj prv
 dio. U Unicodeu, prvih 128 vrijednosti koda (U+0000 do U+007F) potpuno su
 identični ASCII kodovima. Osim toga, Unicode definira više od 150 000
 znakova iz pisama cijelog svijeta. Na primjer, posebni
-latinični znakovi srpske abecede definirani su ovako...
+latinični znakovi hrvatske abecede definirani su ovako...
 
 | Code   | Symbol | DEC     |
 |--------|--------|---------|
