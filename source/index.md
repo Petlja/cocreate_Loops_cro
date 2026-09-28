@@ -1,7 +1,7 @@
 ---
 status: exclude
 alias: Loops_and_Cryptography_cro
-lang: hr
+lang: en
 
 short_description: Uvod u kriptografiju s petljama
 long_description: >
