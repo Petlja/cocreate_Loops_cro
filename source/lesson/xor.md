@@ -11,7 +11,7 @@ u računarstvu i kriptografiji.
 | 1 | 0 | 1       |
 | 1 | 1 | 0       |
 
-Na primjer, za šifriranje riječi „HELLO" koristeći ključ „KEY", najprije
+Na primjer, za šifriranje riječi „HELLO” koristeći ključ „KEY”, najprije
 trebate pretvoriti `HELLO` u binarni zapis...
 
 | Znak | ASCII | Binarno  |
@@ -41,8 +41,8 @@ L ⊕ K: 01001100 ⊕ 01001011 = 00000111 (ASCII 7)
 O ⊕ E: 01001111 ⊕ 01000101 = 00001010 (ASCII 10)
 ```
 
-Dobiveni šifrirani tekst sastoji se od ASCII znakova koji se ne mogu ispisati s
-decimalnim vrijednostima 3, 0, 21, 7 i 10. Ako bi napadač presreo ovu poruku,
+Dobiveni šifrirani tekst sastoji se od ASCII znakova koji se ne mogu ispisati, a čije 
+su decimalne vrijednosti 3, 0, 21, 7 i 10. Ako bi napadač presreo ovu poruku,
 vidio bi samo nečitljive binarne podatke jer znakovi nisu ispisivi.
 
 Za dešifriranje šifriranog teksta trebate XOR-irati šifrirani tekst s istim ključem:
@@ -56,7 +56,7 @@ Za dešifriranje šifriranog teksta trebate XOR-irati šifrirani tekst s istim k
 ```
 
 XOR operacija je samoinverzna — primjena XOR-a dva puta s istim ključem
-vraća originalne podatke.
+vraća izvorne podatke.
 
 U stvarnim primjenama, ponovna upotreba istog ključa za više poruka čini XOR
 šifriranje ranjivim na frekventnu analizu i napade poznatog otvorenog teksta.
