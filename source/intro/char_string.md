@@ -1,13 +1,14 @@
 # Znakovi i nizovi znakova
 
-Razumijevanje načina na koji su znakovi i nizovi znakova reprezentirani pomoći će vam da
+Razumijevanje načina na koji su znakovi i nizovi znakova prikazani pomoći će vam da
 ispravno rukujete tekstom u sljedećoj lekciji, osiguravajući pravilnu obradu podataka.
 
-Vrsta podataka za znakove, koja se često naziva char, koristi se za reprezentaciju
+Podatkovni tip za znakove, koja se često naziva char, koristi se za reprezentaciju
 pojedinih znakova. Budući da računala mogu pohranjivati samo binarne vrijednosti, znakovi
-moraju biti kodirani kao brojevi. U modernim računalnim sustavima koriste se sheme kodiranja
-ASCII ili Unicode. Stariji programski jezici (npr. C) tipično se oslanjaju na ASCII,
-dok moderni jezici (npr. C#) podržavaju Unicode.
+moraju biti kodirani kao brojevi. U modernim računalnim sustavima koriste se standardi za 
+kodiranje znakova ASCII i Unicode. ASCII se tradicionalno koristio za prikaz znakova, dok 
+Unicode omogućuje prikaz znatno većeg broja znakova iz različitih jezika i pisama. 
+Suvremeni programski jezici, uključujući C i C#, podržavaju rad s Unicodeom.
 
 ## ASCII
 
@@ -73,7 +74,7 @@ latinični znakovi hrvatske abecede definirani su ovako...
 | U+017D | Ž      | 381     |
 | U+017E | ž      | 382     |
 
-...latinična slova pisana s dva znaka definirana su ovako...
+...latinični dvoslovi definirani su ovako...
 
 | Code   | Symbol | DEC     |
 |--------|--------|---------|
@@ -164,5 +165,5 @@ Nizovi znakova temeljni su u računarstvu jer predstavljaju tekst, nazive datote
 korisnički unos i još mnogo toga.
 
 Niz znakova tipično je predstavljen kao neprekinuti blok memorije. Neki sustavi
-završavaju nizove posebnim oznakom poput null znaka `'\0'` za
+završavaju nizove posebnom oznakom poput NUL znaka `'\0'` za
 označavanje kraja, dok drugi mogu eksplicitno pohraniti duljinu.
