@@ -33,13 +33,6 @@ d a w n
 acdtkatawatn
 ```
 
-
-## Prvi zadatak
-
-Napravi konzolnu aplikaciju u bilo kojem programskom jeziku koja će šifrirati i
-dešifrirati poruke koristeći Skital šifru. Koristi razvojno okruženje koje
-koristite na satovima programiranja.
-
 ## Prvi zadatak
 
 Napravite konzolnu aplikaciju u bilo kojem programskom jeziku koja će šifrirati
@@ -54,13 +47,11 @@ Dopuštena abeceda za poruke sadrži samo mala slova engleske abecede:
 
 Razmaci, velika slova, brojevi i drugi znakovi nisu dopušteni!
 
-Razmaci, velika slova, brojevi i drugi znakovi nisu dopušteni!
-
 
 U prvom retku korisničkog unosa nalazit će se poruka `m` duljine do sto znakova.
 U drugom retku nalazit će se cijeli broj `k` (broj stupaca – opseg štapa). U
 trećem retku nalazit će se cijeli broj `s` koji predstavlja operaciju. Ako je
-$s=1$, tada `m` treba biti šifrirano. Ako je $s=2$, tada `m` treba biti dešifrirano.
+$s=1$, tada `m` treba biti šifrirana. Ako je $s=2$, tada `m` treba biti dešifrirana.
 
 
 ### Test primjer 1
@@ -129,4 +120,4 @@ i rezultate zapisuje u drugu datoteku.
 ### Rukujte nepotpunim recima
 
 Izmijenite program tako da, ako je posljednji redak kraći od `k`, ispravno
-šifrira i dešifrira rukujući nedostajućim znakovima ili dopunjavanjem.
+šifrira i dešifrira pravilno raspoređujući znakove u nepotpunom retku ili dopunjavajući redak prema unaprijed određenom pravilu.
