@@ -1,13 +1,13 @@
-# Suradnja u rješavanju zadatka - Programiranje u paru u učionici
+# Suradnja u rješavanju zadatka – Programiranje u paru u učionici
 
-U IT tvrtkama danas, agilna metodologija (engl. agile) jedna je od najpopularnijih i najraširenijih metoda razvoja softvera - posebno tamo gdje timovi trebaju brzo, zajednički i prilagodljivo isporučiti funkcionalan softver. **Programiranje u paru** (engl. pair programming) osnovna je praksa u Extreme Programmingu (XP), koji je jedna od Agile metodologija.
+U IT tvrtkama danas agilni pristup razvoju softvera (engl. agile) jedan je od najraširenijih pristupa razvoju softvera – posebno tamo gdje timovi trebaju brzo, zajednički i prilagodljivo isporučiti funkcionalan softver. **Programiranje u paru** (engl. pair programming) osnovna je praksa u Extreme Programmingu (XP), koji je jedan od Agile pristupa.
 
 To je tehnika timskog razvoja softvera u kojoj dva programera rade zajedno za jednim računalom. Jedan programer, koji se zove **vozač** (engl. driver), piše kod i fokusira se na sintaksu, dok drugi, **navigator** (engl. navigator), pregledava svaki red koda dok se tipka, traži pogreške, postavlja pitanja i predlaže poboljšanja. Programeri često mijenjaju uloge.
 
-Ovu praksu vrlo je lako prenijeti iz IT tvrtki u školske učionice informatike. U učionici, dva učenika dijele jedno računalo kako bi zajedno riješili programski zadatak. Jedan učenik tipka kod, dok drugi provjerava kod, daje prijedloge i razmišlja o sljedećim koracima. Nakon svakog podzadatka, mijenjaju uloge. Programiranje u paru pomaže učenicima da uče zajedničkim radom, vježbaju timski rad, razmjenjuju ideje i vide različite načine rješavanja istih problema.
+Ovu praksu vrlo je lako prenijeti iz IT tvrtki u školske učionice informatike. U učionici dva učenika dijele jedno računalo kako bi zajedno riješili programski zadatak. Jedan učenik tipka kod, dok drugi provjerava kod, daje prijedloge i razmišlja o sljedećim koracima. Nakon svakog podzadatka mijenjaju uloge. Programiranje u paru pomaže učenicima da uče zajedničkim radom, vježbaju timski rad, razmjenjuju ideje i vide različite načine rješavanja istih problema.
 
 ```{infonote} 
-Da biste uspješno savladali ovu lekciju, bit će potrebno da radite u paru!
+Da biste uspješno svladali ovu lekciju, bit će potrebno da radite u paru!
 ```
 
 ## Ishodi i vrijeme realizacije
@@ -16,17 +16,17 @@ Da biste uspješno savladali ovu lekciju, bit će potrebno da radite u paru!
 
 ### Ishodi
 
-- Razumjeti strukturu i svrhu petlji, kao i njihovu uporabu u manipulaciji i transformaciji teksta.
+- Razumjeti strukturu i svrhu petlji, kao i njihovu uporabu u obradi i preoblikovanju teksta.
 - Razumjeti principe jednostavnih kriptografskih algoritama i implementirati ih u odabranom programskom jeziku koristeći petlje.
 - Razumjeti kako računala štite privatnost i sprječavaju zloupotrebu informacija, kao i kako se tekst može sakriti, izmiješati i zaštititi od neovlaštenog pristupa.
 
 ## Očekivani rezultati
 
-Po završetku lekcije, učenici će biti u stanju:
+Po završetku lekcije, učenici će moći:
 
-- Ispravno napisati kod s petljama koji implementira Cezarov šifrator s funkcijom šifriranja i dešifriranja.
+- Ispravno napisati kod s petljama koji implementira Cezarova šifra s funkcijom šifriranja i dešifriranja.
 - Napisati i objasniti implementaciju XOR šifre pomoću petlji.
-- Konstruirati skitejl šifru koristeći petlje.
+- Konstruirati šifru skital koristeći petlje.
 - Prepoznati koji je tip petlje prikladan za različite zadatke obrade teksta.
 - Učinkovito raditi u paru primjenjujući programiranje u paru, uspješno komunicirati i predstavljati rezultate jasno i samouvjereno.
 
@@ -47,4 +47,4 @@ Nastavnici trebaju obratiti pažnju na sljedeće moguće izazove pri primjeni pr
 - **Umor:** Duge sesije mogu biti mentalno naporne. Dobro definirani zadaci pomažu održati fokus i energiju.
 ```
 
-Najbolja praksa programiranja u paru preporučuje promjenu uloga nakon svakog podzadatka, kako bi oba učenika ostala angažirana. Učenici trebaju komunicirati naglas, otvoreno i s poštovanjem, objašnjavajući što rade ili o čemu razmišljaju. Ako oboje zapnu, trebaju zatražiti pomoć nastavnika - i to je dio učenja!
+U programiranju u paru preporučuje se promjena uloga nakon svakog podzadatka, kako bi oba učenika ostala angažirana. Učenici trebaju komunicirati naglas, otvoreno i s poštovanjem, objašnjavajući što rade ili o čemu razmišljaju. Ako oboje zapnu, trebaju zatražiti pomoć nastavnika – i to je dio učenja!
