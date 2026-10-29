@@ -7,12 +7,12 @@ radnji. Zahvaljujući uvjetima, program može reagirati različito ovisno o
 podacima koje dobije, dok petlje omogućuju učinkovito ponavljanje istih koraka
 više puta. Ti su koncepti ključni u šifriranju jer se algoritmi za zaštitu
 podataka temelje na nizu pravila, provjera i ponavljajućih postupaka koji
-osiguravaju sigurnost informacija.
+ pridonose zaštiti informacija.
 
 Hajde da se prisjetimo nekih osnova! Ako vam ovo područje i dalje ne bude jasno,
 prođite kroz lekciju na Petlji posvećenu upravo tome.
 
-Poveznica na Petljinu lekciju o petljama je [ovdje](https://www.petlja.org/sr-Latn-RS/kurs/477/12/5844)
+Poveznica na Petljinu lekciju o petljama jest [ovdje](https://www.petlja.org/sr-Latn-RS/kurs/477/12/5844)
 <!--Link za verzije tečaja koje nisu na srpskom https://petlja.org/en/biblioteka/r/lekcije/python-za-svakog/01_karel_eng_02_for -->
 
 ```{learnmorenote} Za nastavnike
