@@ -40,12 +40,12 @@ Učenici se podijele u parove. Svaki par izvlači jednu metodu:
 - Cezar (npr. pomak +3)
 - Skital (npr. 3 retka)
 - XOR (jednostavan ključ, npr. 5)
-Zadatak je da učenici suradničkim radom u paru šifriraju neku rečenicu ili rečenice koje im nastavnik zada (npr. Znanje je moć ili Programiranje je zabavno)
+Zadatak je da učenici suradničkim radom u paru šifriraju neku rečenicu ili rečenice koje im nastavnik zada (npr. „Znanje je moć” ili „Programiranje je zabavno”).
 
 ### Korak 2 – Miješanje
-- Sve šifrirane poruke stavljaju se u "kovertu" (ili digitalnu datoteku).
+- Sve šifrirane poruke stavljaju se u „kovertu” (ili digitalnu datoteku).
 - Parovi izvlače po jednu poruku koju nisu kreirali.
 
 ### Korak 3 – Dešifriranje (bez poznavanja metode)
-Sada par ima zadatak dešifrirati izvučenu poruku, a pritom ne zna koja je metoda šifriranja korištena. Stoga treba najprije utvrditi koja je metoda korištena, zatim dešifrirati poruku, a potom objasniti kako su došli do rješenja.
-Za ovu aktivnost važno je ograničiti vrijeme i objasniti učenicima da je u redu ako ne stignu dešifrirati. Nastavnik ili vršnjak je tu da pojasni primjere s kojima su se parovi mučili i nisu uspjeli riješiti ih.
+Sada par ima zadatak dešifrirati izvučenu poruku, a pritom ne zna koja je metoda šifriranja korištena. Stoga treba najprije utvrditi koja je metoda korištena, zatim dešifrirati poruku, a potom objasniti kako je došao do rješenja.
+Za ovu aktivnost važno je ograničiti vrijeme i objasniti učenicima da je u redu ako ne stignu dešifrirati. Nastavnik ili vršnjak je tu da pojasni primjere s kojima su se parovi mučili i nisu ih uspjeli riješiti.
