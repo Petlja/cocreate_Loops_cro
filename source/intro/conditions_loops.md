@@ -23,7 +23,7 @@ Link za verzije tečaja koje nisu na srpskom https://petlja.org/en/biblioteka/r/
 
 ## Uvjeti
 
-U većini modernih programskih jezika uvjetni iskazi koriste se za donošenje
+U većini modernih programskih jezika uvjetne naredbe koriste se za donošenje
 odluka i upravljanje tokom programa. Najčešće konstrukcije su:
 
 * if
@@ -42,7 +42,7 @@ if uvjet then
 ```
 
 Na primjer, u C, C++, C# i Javi, ako želite provjeriti je li `x` veće od
-`0`, uvjetni iskaz može se napisati ovako:
+`0`, uvjetna naredba može se napisati ovako:
 
 ```csharp
 int x = 5;
@@ -64,7 +64,7 @@ else
 ```
 
 Na primjer, u C, C++, C# i Javi, ako želite provjeriti je li `x` veće od
-`0` ili nije, uvjetni iskaz može se napisati ovako:
+`0` ili nije, uvjetna naredba može se napisati ovako:
 
 ```csharp
 int x = 5;
@@ -78,7 +78,7 @@ if (x > 0) {
 ### Naredba `switch-case`
 
 Naredba `switch-case` korisna je kada uspoređujete istu varijablu s
-mnogo mogućih vrijednosti. Može biti čitljivija od korištenja mnogih naredbi
+mnogo mogućih vrijednosti. Može biti čitljivija od korištenja mnogo naredbi
 `if-else`.
 
 ```text
@@ -93,7 +93,7 @@ switch expression do
 ```
 
 Na primjer, u C, C++, C# i Javi, ako želite odrediti naziv dana
-na temelju rednog broja u tjednu, uvjetni iskaz može se napisati ovako:
+na temelju rednog broja u tjednu, uvjetna naredba može se napisati ovako:
 
 ```csharp
 int day = 3;
@@ -117,7 +117,7 @@ switch (day) {
 
 ### Ugniježđivanje uvjeta
 
-Uvjetni iskazi mogu se postavljati unutar drugih uvjetnih iskaza — to se
+Uvjetni iskazi mogu se postavljati unutar drugih uvjetnih naredbi — to se
 naziva **ugniježđivanje**. Ugniježđeni uvjeti korisni su kada odluka ovisi o
 rezultatu prethodne odluke. Na primjer, možete prvo provjeriti je li korisnik
 prijavljen, a zatim unutar tog bloka provjeriti ima li dopuštenje za
@@ -243,10 +243,10 @@ Petlje se također mogu ugniježđivati, što znači da se jedna petlja postavlj
 druge. To je uobičajeno pri radu s višedimenzionalnim podacima, poput prolaska kroz
 retke i stupce matrice ili iteracije po mreži u igri. Osim toga, petlje i
 uvjeti mogu se slobodno kombinirati — na primjer, petlja može sadržavati naredbu `if`
-za obradu samo određenih elemenata, ili naredba `if` može sadržavati petlju za
+za obradu samo određenih elemenata ili naredba `if` može sadržavati petlju za
 izvođenje ponavljajućih radnji kada je uvjet istinit. Ova mogućnost miješanja i
 ugniježđivanja petlji i uvjeta omogućuje stvaranje složenih algoritama uz
-zadržavanje strukturirane temeljne logike.
+zadržavanje jasne strukture programa.
 
 
 Različiti oblici petlji bit će potrebni za različite oblike šifriranja o kojima
