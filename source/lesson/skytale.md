@@ -2,7 +2,7 @@
 
 The Skytale (skytale) is one of the oldest known tools for encryption, dating back to ancient Greece around 400 BC. It was a simple cylindrical device used by the Spartans to send secret messages during military campaigns.
 
-A strip of parchment or leather was wrapped around a wooden rod (*skytale*) of a certain diameter. The message was then written lengthwise across the wrapped strip. To decrypt, the receiver wrapped the strip around a rod of the same diameter and read the message vertically.
+A strip of parchment or leather was wrapped around a wooden rod (*skytale*) of a certain diameter. The message was then written lengthwise across the wrapped strip. To decrypt, the receiver wrapped the strip around a rod of the same diameter and read the message lengthwise, the same way it was written.
 
 If you want to encrypt the message:
 
@@ -10,7 +10,7 @@ If you want to encrypt the message:
 attackatdawn
 ```
 
-and you choose a rod that allows **4 letters per wrap**, you first write the message vertically in columns, forming a table:
+and you choose a rod that allows **3 letters per wrap**, the strip goes around it 4 times. You write the message along the rod, row by row, 4 letters per row (one on each wrap), forming a table:
 
 ```text
 a t t a
@@ -18,13 +18,13 @@ c k a t
 d a w n
 ```
 
-The encrypted text is then obtained by reading row by row:
+The encrypted text is then obtained by reading column by column (this is the order of the letters on the unwound strip):
 
 ```text
 acdtkatawatn
 ```
 
-To decrypt the message, the receiver wraps the strip around a rod of the same diameter and reads vertically again to reconstruct the original message.
+To decrypt the message, the receiver wraps the strip around a rod of the same diameter and reads row by row again to reconstruct the original message.
 
 ## First assignment
 
@@ -74,9 +74,9 @@ attackatdawn
 
 ## Solution hints
 
-For **encryption**, write the plaintext vertically in a table with `k` columns. Read the table row by row to get the ciphertext.
+For **encryption**, write the plaintext row by row in a table with `k` columns. Read the table column by column to get the ciphertext.
 
-For **decryption**, write the ciphertext row by row into a table with `k` columns, read the table vertically to reconstruct plaintext.
+For **decryption**, write the ciphertext column by column into a table with `k` columns (each column holds the message length divided by `k` letters), then read the table row by row to reconstruct the plaintext.
 
 ## More complex Skytale Assignments (optional)
 
