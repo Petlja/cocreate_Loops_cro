@@ -8,6 +8,7 @@ For example, if you write `NIKOLATESLA` and shift each letter three places to th
 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 X Y Z A B C D E F G H I J K L M N O P Q R S T U V W
 ```
+![Caesar Cipher Left Shift](./images/caesar1.png)
 
 Letter `N` becomes `K`, `I` becomes `F`, and so on. So each letter is replaced by another letter which is a certain distance away in the alphabet.
 
@@ -20,7 +21,6 @@ D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
 
 Letter `K` becomes `N`, `F` becomes `I`, and so on. The result of this shift is the original decrypted message `NIKOLATESLA`.
 
-![Caesar Cipher Left Shift](./images/caesar1.png)
 
 ## Assignment to think about
 
