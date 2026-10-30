@@ -2,7 +2,7 @@
 
 One of the great military commanders who used encrypted messages was Julius Caesar, around 50 BC. He used a simple cipher known as the Caesar cipher to protect military communications. This cipher is also known as a shift cipher because each letter in the plaintext is replaced by a letter some fixed number of positions down or up the alphabet.
 
-For example, if you write `NIKOLATESLA` and shift each letter three places to the right:
+For example, if you write `NIKOLATESLA` and shift each letter three places to the left:
 
 ```text
 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
@@ -11,7 +11,7 @@ X Y Z A B C D E F G H I J K L M N O P Q R S T U V W
 
 Letter `N` becomes `K`, `I` becomes `F`, and so on. So each letter is replaced by another letter which is a certain distance away in the alphabet.
 
-**Decryption** works the same way, but in reverse. To decrypt the ciphertext, shift each letter back three places to the left:
+**Decryption** works the same way, but in reverse. To decrypt the ciphertext, shift each letter back three places to the right:
 
 ```text
 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
@@ -85,18 +85,18 @@ Since the English alphabet has 26 letters, the position of each letter can be re
 To **encrypt** a letter, you can use the following formula:
 
 ```text
-new_letter_position = (current_letter_position + shift_value) mod 26
+new_letter_position = (current_letter_position - shift_value + 26) mod 26
 ```
 
-`original_position` represents the numeric value of the letter in the alphabet, `shift_value` represents the number of positions to shift (1–25), and `mod 26` ensures the value wraps around the alphabet.
+`current_letter_position` represents the numeric value of the letter in the alphabet, `shift_value` represents the number of positions to shift (1–25), `+ 26` ensures the value does not become negative, and `mod 26` ensures the value wraps around the alphabet.
 
 To **decrypt** a letter, you can use the following formula:
 
 ```text
-new_letter_position = (current_letter_position - shift_value + 26) mod 26
+new_letter_position = (current_letter_position + shift_value) mod 26
 ```
 
-Similarly to encryption, but the shift value is subtracted, and `+ 26` ensures the value does not become negative.
+Similarly to encryption, but the shift value is added, so the value cannot become negative and `+ 26` is not needed.
 
 ## More complex Caesar Cipher Assignments (optional)
 
