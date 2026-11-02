@@ -4,11 +4,12 @@ Jedan od velikih vojskovođa koji je upotrebljavao šifrirane poruke bio je Juli
 
 Primjerice, ako napišete `NIKOLATESLA` i svako slovo pomaknete za tri mjesta ulijevo:
 
+![Caesar Cipher Left Shift](./images/caesar1.png)
+
 ```text
 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 X Y Z A B C D E F G H I J K L M N O P Q R S T U V W
 ```
-![Caesar Cipher Left Shift](./images/caesar1.png)
 
 Slovo `N` postaje `K`, `I` postaje `F` itd. Dakle, svako slovo zamjenjuje se drugim slovom koje je u abecedi udaljeno za određeni broj mjesta.
 
