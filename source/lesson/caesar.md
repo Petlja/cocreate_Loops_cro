@@ -6,7 +6,9 @@ generalima, šifrirao ih je tako što je slova u tekstu pomicao za određeni
 broj mjesta u abecedi. Primatelji poruke mogli su je dešifrirati jer su znali
 vrijednost pomaka — dok su svi ostali vidjeli samo besmisleni tekst.
 
-Na primjer, ako napišete `NIKOLATESLA` i svako slovo pomaknete tri mjesta udesno:
+Na primjer, ako napišete `NIKOLATESLA` i svako slovo pomaknete tri mjesta uljevo:
+
+![Cezarova šifra pomak ulijevo](./images/caesar1.png)
 
 ```text
 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
