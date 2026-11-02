@@ -1,16 +1,16 @@
-# Skytale
+# Skitala
 
-The Skytale (skytale) is one of the oldest known tools for encryption, dating back to ancient Greece around 400 BC. It was a simple cylindrical device used by the Spartans to send secret messages during military campaigns.
+Skitala je jedan od najstarijih poznatih sredstava za šifriranje. Potječe iz stare Grčke, iz oko 400. godine pr. Kr. Bila je to jednostavna cilindrična naprava koju su Spartanci upotrebljavali za slanje tajnih poruka tijekom vojnih pohoda.
 
-A strip of parchment or leather was wrapped around a wooden rod (*skytale*) of a certain diameter. The message was then written lengthwise across the wrapped strip. To decrypt, the receiver wrapped the strip around a rod of the same diameter and read the message lengthwise, the same way it was written.
+Traka od pergamenta ili kože namotala se oko drvenog štapa (*skitala*) određena promjera. Poruka se zatim pisala uzduž namotane trake. Za dešifriranje je primatelj namotao traku oko štapa istog promjera i čitao poruku uzduž, na isti način na koji je bila napisana.
 
-If you want to encrypt the message:
+Ako želite šifrirati poruku:
 
 ```text
 attackatdawn
 ```
 
-and you choose a rod that allows **3 letters per wrap**, the strip goes around it 4 times. You write the message along the rod, row by row, 4 letters per row (one on each wrap), forming a table:
+a odaberete štap na koji stane **3 slova po namotu**, traka se oko njega namotava 4 puta. Poruku pišete uz štap, redak po redak, po 4 slova u svakom retku (jedno na svakom namotu), čime se dobiva tablica:
 
 ```text
 a t t a
@@ -18,31 +18,31 @@ c k a t
 d a w n
 ```
 
-The encrypted text is then obtained by reading column by column (this is the order of the letters on the unwound strip):
+Šifrirani tekst zatim se dobiva čitanjem stupac po stupac (to je redoslijed slova na odmotanoj traci):
 
 ```text
 acdtkatawatn
 ```
 
-To decrypt the message, the receiver wraps the strip around a rod of the same diameter and reads row by row again to reconstruct the original message.
+Za dešifriranje poruke primatelj namotava traku oko štapa istog promjera i ponovno čita redak po redak kako bi obnovio izvornu poruku.
 
-## First assignment
+## Prvi zadatak
 
-Create a console application in any programming language to encrypt and decrypt messages using the Skytale cipher.
+Napravite konzolnu aplikaciju u bilo kojem programskom jeziku koja šifrira i dešifrira poruke pomoću šifre skitala.
 
-The allowed alphabet for messages contains only lowercase letters of the English alphabet:
+Dopuštena abeceda za poruke sadrži samo mala slova engleske abecede:
 
 ```text
 Σ = { a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z }
 ```
 
-Spaces, uppercase letters, numbers, and other characters are not allowed!
+Razmaci, velika slova, brojevi i drugi znakovi nisu dopušteni!
 
-In the first line of input there is a message `m` of at most one hundred characters. In the second line there is an integer `k` (the number of columns in the table for encryption). In the third line there is an integer `s` (1 for encryption, 2 for decryption).
+U prvom retku ulaza nalazi se poruka `m` koja ima najviše sto znakova. U drugom retku nalazi se cijeli broj `k` (broj stupaca u tablici za šifriranje). U trećem retku nalazi se cijeli broj `s` (1 za šifriranje, 2 za dešifriranje).
 
-### Test Example 1
+### Primjer provjere 1
 
-If the input is:
+Ako je ulaz:
 
 ```text
 attackatdawn
@@ -50,15 +50,15 @@ attackatdawn
 1
 ```
 
-the output should be:
+treba biti izlaz:
 
 ```text
 acdtkatawatn
 ```
 
-### Test Example 2
+### Primjer provjere 2
 
-If the input is:
+Ako je ulaz:
 
 ```text
 acdtkatawatn
@@ -66,36 +66,36 @@ acdtkatawatn
 2
 ```
 
-the output should be:
+treba biti izlaz:
 
 ```text
 attackatdawn
 ```
 
-## Solution hints
+## Savjeti za rješenje
 
-For **encryption**, write the plaintext row by row in a table with `k` columns. Read the table column by column to get the ciphertext.
+Za **šifriranje** upišite otvoreni tekst redak po redak u tablicu s `k` stupaca. Pročitajte tablicu stupac po stupac kako biste dobili šifrirani tekst.
 
-For **decryption**, write the ciphertext column by column into a table with `k` columns (each column holds the message length divided by `k` letters), then read the table row by row to reconstruct the plaintext.
+Za **dešifriranje** upišite šifrirani tekst stupac po stupac u tablicu s `k` stupaca (svaki stupac sadrži duljinu poruke podijeljenu s `k` slova), a zatim pročitajte tablicu redak po redak kako biste obnovili otvoreni tekst.
 
-## More complex Skytale Assignments (optional)
+## Složeniji zadaci sa skitalom (izborno)
 
-### Expand the allowed alphabet
+### Proširite dopuštenu abecedu
 
-Include uppercase letters, spaces, numbers, and punctuation marks.
+Uključite velika slova, razmake, brojeve i interpunkcijske znakove.
 
-### Use functions
+### Upotrijebite funkcije
 
-Create `encrypt()` and `decrypt()` functions to make the code modular.
+Izradite funkcije `encrypt()` i `decrypt()` kako biste kod učinili modularnim.
 
-### Create a class
+### Izradite klasu
 
-Implement a `SkytaleCipher` class that stores `k` and provides methods for encryption and decryption.
+Izradite klasu `SkytaleCipher` koja sprema `k` i pruža metode za šifriranje i dešifriranje.
 
-### Encrypt and decrypt files
+### Šifrirajte i dešifrirajte datoteke
 
-Modify the program so that it reads plaintext or ciphertext from a file and writes the result to another file.
+Izmijenite program tako da čita otvoreni ili šifrirani tekst iz datoteke i rezultat zapisuje u drugu datoteku.
 
-### Handle incomplete rows
+### Rukujte nepotpunim recima
 
-Modify the program so that if the last row is shorter than `k`, it still encrypts and decrypts correctly, handling incomplete rows appropriately.
+Izmijenite program tako da, ako je zadnji redak kraći od `k`, ipak ispravno šifrira i dešifrira poruku te na odgovarajući način obrađuje nepotpune retke.
