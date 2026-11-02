@@ -1,14 +1,8 @@
-# Skital
+# Skitala
 
-Skital (engl. skytale) jedan je od najstarijih poznatih alata za šifriranje,
-koji potječe iz antičke Grčke oko 400. godine prije nove ere. Bio je to
-jednostavan cilindrični uređaj koji su Spartanci koristili za slanje tajnih
-poruka tijekom vojnih pohoda.
+Skitala je jedan od najstarijih poznatih sredstava za šifriranje. Potječe iz stare Grčke, iz oko 400. godine pr. Kr. Bila je to jednostavna cilindrična naprava koju su Spartanci upotrebljavali za slanje tajnih poruka tijekom vojnih pohoda.
 
-Traka pergamenta ili kože omotavala se oko drvenog štapa (*skital*) određenog
-promjera. Poruka se zatim pisala duž štapa. Kada se traka odmotala, slova su
-izgledala razbacano i besmisleno. Primatelj je trebao štap **istog promjera**
-kako bi omotao traku i pročitao originalnu poruku.
+Traka od pergamenta ili kože namotala se oko drvenog štapa (*skitala*) određena promjera. Poruka se zatim pisala uzduž namotane trake. Za dešifriranje je primatelj namotao traku oko štapa istog promjera i čitao poruku uzduž, na isti način na koji je bila napisana.
 
 Ako želite šifrirati poruku:
 
@@ -16,9 +10,7 @@ Ako želite šifrirati poruku:
 attackatdawn
 ```
 
-
-i odaberete štap koji omogućuje **4 slova po okretaju**, najprije pišete
-poruku vertikalno u stupcima, formirajući retke duljine 4:
+a odaberete štap na koji stane **3 slova po namotu**, traka se oko njega namotava 4 puta. Poruku pišete uz štap, redak po redak, po 4 slova u svakom retku (jedno na svakom namotu), čime se dobiva tablica:
 
 ```text
 a t t a
@@ -26,18 +18,17 @@ c k a t
 d a w n
 ```
 
-
-Šifrirani tekst se zatim dobiva čitanjem po recima:
+Šifrirani tekst zatim se dobiva čitanjem stupac po stupac (to je redoslijed slova na odmotanoj traci):
 
 ```text
 acdtkatawatn
 ```
 
+Za dešifriranje poruke primatelj namotava traku oko štapa istog promjera i ponovno čita redak po redak kako bi obnovio izvornu poruku.
+
 ## Prvi zadatak
 
-Napravite konzolnu aplikaciju u bilo kojem programskom jeziku koja će šifrirati
-i dešifrirati poruke koristeći Skital šifru. Koristite razvojno okruženje koje
-koristite na satovima programiranja.
+Napravite konzolnu aplikaciju u bilo kojem programskom jeziku koja šifrira i dešifrira poruke pomoću šifre skitala.
 
 Dopuštena abeceda za poruke sadrži samo mala slova engleske abecede:
 
@@ -47,16 +38,11 @@ Dopuštena abeceda za poruke sadrži samo mala slova engleske abecede:
 
 Razmaci, velika slova, brojevi i drugi znakovi nisu dopušteni!
 
+U prvom retku ulaza nalazi se poruka `m` koja ima najviše sto znakova. U drugom retku nalazi se cijeli broj `k` (broj stupaca u tablici za šifriranje). U trećem retku nalazi se cijeli broj `s` (1 za šifriranje, 2 za dešifriranje).
 
-U prvom retku korisničkog unosa nalazit će se poruka `m` duljine do sto znakova.
-U drugom retku nalazit će se cijeli broj `k` (broj stupaca – opseg štapa). U
-trećem retku nalazit će se cijeli broj `s` koji predstavlja operaciju. Ako je
-$s=1$, tada `m` treba biti šifrirana. Ako je $s=2$, tada `m` treba biti dešifrirana.
+### Primjer provjere 1
 
-
-### Test primjer 1
-
-Ako je unos:
+Ako je ulaz:
 
 ```text
 attackatdawn
@@ -64,17 +50,15 @@ attackatdawn
 1
 ```
 
-
-izlaz bi trebao biti:
+treba biti izlaz:
 
 ```text
 acdtkatawatn
 ```
 
+### Primjer provjere 2
 
-### Test primjer 2
-
-Ako je unos:
+Ako je ulaz:
 
 ```text
 acdtkatawatn
@@ -82,8 +66,7 @@ acdtkatawatn
 2
 ```
 
-
-izlaz bi trebao biti:
+treba biti izlaz:
 
 ```text
 attackatdawn
@@ -91,33 +74,28 @@ attackatdawn
 
 ## Savjeti za rješenje
 
-Za **šifriranje**, zapišite otvoreni tekst vertikalno u tablicu s `k` stupaca.
-Čitajte tablicu po recima kako biste formirali šifrirani tekst. Za
-**dešifriranje**, zapišite šifrirani tekst po recima u tablicu s `k` stupaca,
-a zatim čitajte tablicu vertikalno kako biste rekonstruirali otvoreni tekst.
+Za **šifriranje** upišite otvoreni tekst redak po redak u tablicu s `k` stupaca. Pročitajte tablicu stupac po stupac kako biste dobili šifrirani tekst.
 
+Za **dešifriranje** upišite šifrirani tekst stupac po stupac u tablicu s `k` stupaca (svaki stupac sadrži duljinu poruke podijeljenu s `k` slova), a zatim pročitajte tablicu redak po redak kako biste obnovili otvoreni tekst.
 
-## Složeniji zadaci sa Skital šifrom (opcionalno)
+## Složeniji zadaci sa skitalom (izborno)
 
 ### Proširite dopuštenu abecedu
 
-Uključite velika slova, razmake, brojeve i interpunkciju.
+Uključite velika slova, razmake, brojeve i interpunkcijske znakove.
 
-### Koristite funkcije
+### Upotrijebite funkcije
 
-Napravite funkcije `encrypt()` i `decrypt()` kako bi kod bio modularan.
+Izradite funkcije `encrypt()` i `decrypt()` kako biste kod učinili modularnim.
 
-### Napravite klasu
+### Izradite klasu
 
-Implementirajte klasu `SkytaleCipher` koja pohranjuje `k` i pruža metode za
-šifriranje i dešifriranje.
+Izradite klasu `SkytaleCipher` koja sprema `k` i pruža metode za šifriranje i dešifriranje.
 
 ### Šifrirajte i dešifrirajte datoteke
 
-Izmijenite program tako da čita otvoreni tekst ili šifrirani tekst iz datoteke
-i rezultate zapisuje u drugu datoteku.
+Izmijenite program tako da čita otvoreni ili šifrirani tekst iz datoteke i rezultat zapisuje u drugu datoteku.
 
 ### Rukujte nepotpunim recima
 
-Izmijenite program tako da, ako je posljednji redak kraći od `k`, ispravno
-šifrira i dešifrira pravilno raspoređujući znakove u nepotpunom retku ili dopunjavajući redak prema unaprijed određenom pravilu.
+Izmijenite program tako da, ako je zadnji redak kraći od `k`, ipak ispravno šifrira i dešifrira poruku te na odgovarajući način obrađuje nepotpune retke.

@@ -1,75 +1,48 @@
 # Cezarova šifra
 
-Jedan od velikih vojskovođa koji je koristio šifrirane poruke bio je Julije
-Cezar, oko 50. godine prije nove ere. Kada je Cezar slao poruke svojim
-generalima, šifrirao ih je tako što je slova u tekstu pomicao za određeni
-broj mjesta u abecedi. Primatelji poruke mogli su je dešifrirati jer su znali
-vrijednost pomaka — dok su svi ostali vidjeli samo besmisleni tekst.
+Jedan od velikih vojskovođa koji je upotrebljavao šifrirane poruke bio je Julije Cezar, oko 50. godine pr. Kr. Za zaštitu vojnih komunikacija koristio je jednostavnu šifru poznatu kao Cezarova šifra. Ova se šifra naziva i šifra pomaka jer se svako slovo otvorenog teksta zamjenjuje slovom koje se nalazi određen broj mjesta ispred ili iza njega u abecedi.
 
-Na primjer, ako napišete `NIKOLATESLA` i svako slovo pomaknete tri mjesta uljevo:
-
-![Cezarova šifra pomak ulijevo](./images/caesar1.png)
+Primjerice, ako napišete `NIKOLATESLA` i svako slovo pomaknete za tri mjesta ulijevo:
 
 ```text
 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 X Y Z A B C D E F G H I J K L M N O P Q R S T U V W
 ```
+![Caesar Cipher Left Shift](./images/caesar1.png)
 
+Slovo `N` postaje `K`, `I` postaje `F` itd. Dakle, svako slovo zamjenjuje se drugim slovom koje je u abecedi udaljeno za određeni broj mjesta.
 
-Slovo `N` postaje `K`, `I` postaje `F` i tako dalje. Dakle, svako slovo
-zamjenjuje se drugim slovom koje je za određeni broj pozicija dalje u abecedi.
-Kada se dođe do kraja abecede, nastavlja se od početka. Rezultat pomaka za
-tri slova udesno je šifrirana poruka `KFHLIXQBPIX`. S druge strane, ako
-svako slovo u dobivenoj riječi pomaknete tri slova ulijevo:
+**Dešifriranje** radi na isti način, ali obrnuto. Da biste dešifrirali šifrirani tekst, pomaknite svako slovo za tri mjesta natrag udesno:
 
 ```text
 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
 ```
 
-
-Slovo `K` postaje `N`, `F` postaje `I` i tako dalje. Rezultat tog pomaka
-je izvorna dešifrirana poruka `NIKOLATESLA`.
-
-![Cezarova šifra pomak ulijevo](./images/caesar1.png)
+Slovo `K` postaje `N`, `F` postaje `I` itd. Rezultat ovog pomaka izvorna je dešifrirana poruka `NIKOLATESLA`.
 
 
 ## Zadatak za razmišljanje
 
-Razmislite kako biste napravili konzolnu aplikaciju u bilo kojem programskom
-jeziku koja će šifrirati i dešifrirati poruke koristeći Cezarovu šifru.
-Dani su neki savjeti. Kada ih pročitate, pokušajte napraviti konzolnu
-aplikaciju u razvojnom okruženju koje koristite na satovima programiranja.
-
+Razmislite kako biste u bilo kojem programskom jeziku napravili konzolnu aplikaciju koja šifrira i dešifrira poruke pomoću Cezarove šifre.
 
 ```{infonote}
-Prvi učenik (*vozač*) treba se fokusirati na sintaksu dok piše kod za šifriranje
-poruke. Drugi učenik (*navigator*) treba pregledavati svaki redak koda dok se
-tipka, tražiti pogreške, postavljati pitanja i predlagati poboljšanja. Nakon toga,
-učenici trebaju zamijeniti uloge i nastaviti s pisanjem koda za dešifriranje.
+Prvi učenik (*vozač*) treba se pri tipkanju koda za šifriranje poruke usredotočiti na sintaksu. Drugi učenik (*navigator*) treba pratiti kod, predlagati poboljšanja i postavljati pitanja. Nakon šifriranja zamijenite uloge za dešifriranje.
 ```
 
-
-Dopuštena abeceda za poruke (i za otvoreni i za šifrirani tekst) može sadržavati
-samo mala slova engleske abecede:
+Dopuštena abeceda za poruke (i za otvoreni i za šifrirani tekst) može sadržavati samo mala slova engleske abecede:
 
 ```text
 Σ = { a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z }
 ```
 
-
 Razmaci, velika slova, brojevi i drugi znakovi nisu dopušteni.
 
+U prvom retku ulaza nalazi se poruka `m` koja ima najviše sto znakova, u drugom retku cijeli broj `n` koji predstavlja vrijednost pomaka (1–25), a u trećem retku cijeli broj `s` koji predstavlja smjer šifriranja. Ako je `s=1`, `m` se treba šifrirati, a ako je `s=2`, `m` se treba dešifrirati.
 
-U prvom retku korisničkog unosa nalazit će se poruka `m` duljine do sto znakova,
-u drugom retku cijeli broj `n` koji predstavlja vrijednost pomaka ($1 \leq n < 26$),
-a u trećem retku cijeli broj `s` koji predstavlja smjer šifriranja. Ako je $s=1$,
-tada `m` treba biti šifriran, a ako je $s=2$, tada `m` treba biti dešifriran.
+### Primjer provjere 1
 
-
-### Test primjer 1
-
-Ako je unos:
+Ako je ulaz:
 
 ```text
 nikolatesla
@@ -77,17 +50,15 @@ nikolatesla
 1
 ```
 
-
-izlaz bi trebao biti:
+treba biti izlaz:
 
 ```text
 kfhlixqbpix
 ```
 
+### Primjer provjere 2
 
-### Test primjer 2
-
-Ako je unos:
+Ako je ulaz:
 
 ```text
 kfhlixqbpix
@@ -95,8 +66,7 @@ kfhlixqbpix
 2
 ```
 
-
-izlaz bi trebao biti:
+treba biti izlaz:
 
 ```text
 nikolatesla
@@ -104,8 +74,7 @@ nikolatesla
 
 ## Savjeti za rješenje
 
-Budući da engleska abeceda ima 26 slova, pozicija svakog slova može se
-predstaviti brojem od 0 do 25.
+Budući da engleska abeceda ima 26 slova, položaj svakog slova može se prikazati brojem od 0 do 25.
 
 * a → 0
 * b → 1
@@ -113,85 +82,64 @@ predstaviti brojem od 0 do 25.
 * ...
 * z → 25
 
-
 Za **šifriranje** slova možete koristiti sljedeću formulu:
 
 ```text
-nova_pozicija_slova = (trenutna_pozicija_slova + vrijednost_pomaka) mod 26
+new_letter_position = (current_letter_position - shift_value + 26) mod 26
 ```
 
-
-`trenutna_pozicija` predstavlja numeričku vrijednost slova u abecedi,
-`vrijednost_pomaka` predstavlja broj pozicija za pomicanje (1–25), a `mod 26`
-osigurava da se rezultat vraća na početak abecede ako prelazi `z`.
-
+`current_letter_position` predstavlja numeričku vrijednost slova u abecedi, `shift_value` predstavlja broj mjesta pomaka (1–25), `+ 26` osigurava da vrijednost ne postane negativna, a `mod 26` osigurava vraćanje na početak abecede.
 
 Za **dešifriranje** slova možete koristiti sljedeću formulu:
 
 ```text
-nova_pozicija_slova = (trenutna_pozicija_slova - vrijednost_pomaka + 26) mod 26
+new_letter_position = (current_letter_position + shift_value) mod 26
 ```
 
+Na isti način kao i pri šifriranju, ali se vrijednost pomaka zbraja, pa vrijednost ne može postati negativna i `+ 26` nije potrebno.
 
-Slično kao kod šifriranja, ali oduzimate vrijednost pomaka, a `+ 26` osigurava
-da vrijednost ne postane negativna prije primjene `mod 26`.
-
-## Složeniji zadaci s Cezarovom šifrom (opcionalno)
+## Složeniji zadaci sa Cezarovom šifrom (izborno)
 
 ### Proširite dopuštenu abecedu
 
-Napravite konzolnu aplikaciju u bilo kojem programskom jeziku koja će šifrirati
-i dešifrirati poruke koristeći Cezarovu šifru. Dopuštena abeceda za poruke (i
-za otvoreni i za šifrirani tekst) može sadržavati mala i velika slova engleske
-abecede, razmake, brojeve i interpunkcijske znakove!
+Napravite konzolnu aplikaciju u bilo kojem programskom jeziku koja šifrira i dešifrira poruke pomoću Cezarove šifre, ali s proširenom abecedom.
 
-Aplikacija treba šifrirati ili dešifrirati samo mala i velika slova. Razmaci,
-brojevi i interpunkcijski znakovi trebaju ostati nepromijenjeni tijekom
-šifriranja ili dešifriranja.
+Aplikacija treba šifrirati ili dešifrirati samo mala i velika slova. Razmaci, brojevi i interpunkcijski znakovi trebaju ostati nepromijenjeni.
 
-U prvom retku korisničkog unosa nalazit će se poruka `m` duljine do sto znakova,
-u drugom retku cijeli broj `n` koji predstavlja pomak ($1 \leq n < 26$), a u
-trećem retku cijeli broj `s` koji predstavlja smjer šifriranja. Ako je $s=1$,
-tada `m` treba biti šifriran, a ako je $s=2$, tada `m` treba biti dešifriran.
+U prvom retku ulaza nalazi se poruka `m` koja ima najviše sto znakova, u drugom retku cijeli broj `n` (vrijednost pomaka od 1–25), a u trećem retku cijeli broj `s` (1 za šifriranje, 2 za dešifriranje).
 
+## Upotrijebite funkcije 
 
-## Koristite funkcije 
+Napravite dvije funkcije: jednu za šifriranje poruka i jednu za dešifriranje poruka. Upotrijebite izrađene funkcije u glavnom programu.
 
-Napravite dvije funkcije: jednu za šifriranje poruka i jednu za dešifriranje
-poruka. Koristite kreirane funkcije u svom glavnom programu.
+Ovdje možete raditi u paru – jedna osoba treba šifrirati poruku, a druga je dešifrirati!
 
-Ovdje možete raditi u paru — jedna osoba treba šifrirati poruku, a druga je dešifrirati!
+## Izradite klasu
 
-## Napravite klasu
+Izradite klasu `CaesarCipher` koja sadrži:
 
-Napravite klasu `CaesarCipher` koja sadrži:
-
-- konstruktor s parametrom koji prihvaća vrijednost pomaka i osigurava da je
-  vrijednost u dopuštenom rasponu,
-- privatno svojstvo za pohranu vrijednosti pomaka, s getter i setter metodama,
+- konstruktor s parametrom koji prihvaća vrijednost pomaka i osigurava da je vrijednost u dopuštenom rasponu (0–25),
+- privatno svojstvo za spremanje vrijednosti pomaka, s getter i setter metodama,
 - javnu metodu za šifriranje poruke,
 - javnu metodu za dešifriranje poruke i
-- opcionalno, privatnu metodu za obradu poruka koju koriste obje metode.
+- izborno, privatnu metodu za obradu poruka koju koriste obje metode.
 
-Koristite kreiranu klasu u svom glavnom programu.
-
+Upotrijebite izrađenu klasu u glavnom programu.
 
 ## Prihvatite argumente naredbenog retka
 
-Umjesto čekanja korisničkog unosa, napravite konzolnu aplikaciju koja
-prihvaća sljedeće argumente naredbenog retka:
+Umjesto čekanja na korisnički unos, napravite konzolnu aplikaciju koja prihvaća sljedeće argumente naredbenog retka:
 
 1. argument `m` za poruku,
-2. argument `n` za vrijednost pomaka (`0` do `25`), i
+2. argument `n` za vrijednost pomaka (`0` do `25`) i
 3. argument `s` za smjer šifriranja (`1` za šifriranje, `2` za dešifriranje).
-
 
 ## Šifrirajte i dešifrirajte datoteke
 
-Iskoristite dosadašnje znanje za izradu konzolne aplikacije za šifriranje i
-dešifriranje tekstualnih datoteka. Vaša aplikacija treba prihvatiti sljedeće
-argumente naredbenog retka:
+Upotrijebite dosad stečeno znanje za izradu konzolne aplikacije koja šifrira i dešifrira tekstne datoteke pomoću Cezarove šifre.
+
+Aplikacija treba prihvatiti sljedeće argumente naredbenog retka:
 
 1. argument `m` za naziv datoteke (ili putanju),
-2. argument `n` za vrijednost pomaka (`0` do `25`), i
+2. argument `n` za vrijednost pomaka (`0` do `25`) i
 3. argument `s` za smjer šifriranja (`1` za šifriranje, `2` za dešifriranje).
