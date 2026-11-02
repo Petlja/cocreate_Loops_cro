@@ -8,7 +8,7 @@ poruka tijekom vojnih pohoda.
 Traka pergamenta ili kože omotavala se oko drvenog štapa (*skital*) određenog
 promjera. Poruka se zatim pisala duž štapa. Kada se traka odmotala, slova su
 izgledala razbacano i besmisleno. Primatelj je trebao štap **istog promjera**
-kako bi omotao traku i pročitao originalnu poruku.
+kao bi omotao traku i pročitao originalnu poruku.
 
 Ako želite šifrirati poruku:
 
@@ -17,7 +17,7 @@ attackatdawn
 ```
 
 
-i odaberete štap koji omogućuje **4 slova po okretaju**, najprije pišete
+i odaberete štap koji omogućuje **3 slova po okretaju**, najprije pišete
 poruku vertikalno u stupcima, formirajući retke duljine 4:
 
 ```text
@@ -27,11 +27,15 @@ d a w n
 ```
 
 
-Šifrirani tekst se zatim dobiva čitanjem po recima:
+Šifrirani tekst se zatim dobiva čitanjem po stupcima (ovaj redoslijed slova na
+odmotanoj traci):
 
 ```text
 acdtkatawatn
 ```
+
+Kako biste dešifrirali poruku, primatelj omota traku oko štapa istog promjera i
+ponovno čita po redovima da bi rekonstruirao izvornu poruku.
 
 ## Prvi zadatak
 
@@ -121,3 +125,4 @@ i rezultate zapisuje u drugu datoteku.
 
 Izmijenite program tako da, ako je posljednji redak kraći od `k`, ispravno
 šifrira i dešifrira pravilno raspoređujući znakove u nepotpunom retku ili dopunjavajući redak prema unaprijed određenom pravilu.
+

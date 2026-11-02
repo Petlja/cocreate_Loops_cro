@@ -6,7 +6,7 @@ generalima, šifrirao ih je tako što je slova u tekstu pomicao za određeni
 broj mjesta u abecedi. Primatelji poruke mogli su je dešifrirati jer su znali
 vrijednost pomaka — dok su svi ostali vidjeli samo besmisleni tekst.
 
-Na primjer, ako napišete `NIKOLATESLA` i svako slovo pomaknete tri mjesta udesno:
+Na primjer, ako napišete `NIKOLATESLA` i svako slovo pomaknete tri mjesta ulijevo:
 
 ![Cezarova šifra pomak ulijevo](./images/caesar1.png)
 
@@ -19,8 +19,8 @@ X Y Z A B C D E F G H I J K L M N O P Q R S T U V W
 Slovo `N` postaje `K`, `I` postaje `F` i tako dalje. Dakle, svako slovo
 zamjenjuje se drugim slovom koje je za određeni broj pozicija dalje u abecedi.
 Kada se dođe do kraja abecede, nastavlja se od početka. Rezultat pomaka za
-tri slova udesno je šifrirana poruka `KFHLIXQBPIX`. S druge strane, ako
-svako slovo u dobivenoj riječi pomaknete tri slova ulijevo:
+tri slova ulijevo je šifrirana poruka `KFHLIXQBPIX`. S druge strane, ako
+svako slovo u dobivenoj riječi pomaknete tri slova udesno:
 
 ```text
 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
@@ -115,7 +115,7 @@ predstaviti brojem od 0 do 25.
 Za **šifriranje** slova možete koristiti sljedeću formulu:
 
 ```text
-nova_pozicija_slova = (trenutna_pozicija_slova + vrijednost_pomaka) mod 26
+nova_pozicija_slova = (trenutna_pozicija_slova - vrijednost_pomaka + 26) mod 26
 ```
 
 
@@ -127,7 +127,7 @@ osigurava da se rezultat vraća na početak abecede ako prelazi `z`.
 Za **dešifriranje** slova možete koristiti sljedeću formulu:
 
 ```text
-nova_pozicija_slova = (trenutna_pozicija_slova - vrijednost_pomaka + 26) mod 26
+nova_pozicija_slova = (trenutna_pozicija_slova + vrijednost_pomaka) mod 26
 ```
 
 
@@ -187,9 +187,10 @@ prihvaća sljedeće argumente naredbenog retka:
 ## Šifrirajte i dešifrirajte datoteke
 
 Iskoristite dosadašnje znanje za izradu konzolne aplikacije za šifriranje i
-dešifriranje tekstualnih datoteka. Vaša aplikacija treba prihvatiti sljedeće
+dehifriranje tekstualnih datoteka. Vaša aplikacija treba prihvatiti sljedeće
 argumente naredbenog retka:
 
 1. argument `m` za naziv datoteke (ili putanju),
 2. argument `n` za vrijednost pomaka (`0` do `25`), i
 3. argument `s` za smjer šifriranja (`1` za šifriranje, `2` za dešifriranje).
+
