@@ -14,6 +14,7 @@ prođite kroz lekciju na Petlji posvećenu upravo tome.
 
 Poveznica na Petljinu lekciju o petljama jest [ovdje](https://www.petlja.org/sr-Latn-RS/kurs/477/12/5844)
 <!--Link za verzije tečaja koje nisu na srpskom https://petlja.org/en/biblioteka/r/lekcije/python-za-svakog/01_karel_eng_02_for -->
+Ako se lekcija prikazuje na ćirilici, prevedite stranicu pomoću prevoditelja u pregledniku: desnom tipkom miša kliknite bilo gdje na stranici i odaberite Prevedi na hrvatski.
 
 <!--```{learnmorenote} Za nastavnike
 
